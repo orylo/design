@@ -19,7 +19,7 @@
   function hasTag(p, t) { return (p.tags || []).indexOf(t) !== -1; }
 
   function tileHTML(p) {
-    var label = (p.tags && p.tags[0]) || (catLabel[p.category] || "Work");
+    var label = catLabel[p.category] || "Work";   // 3개 카테고리 중 하나로 통일
     var ym = String(p.date || "").replace("-", ".");   // 2024-12 → 2024.12
     var isVideo = hasTag(p, "Video") || hasTag(p, "Film");
     return (
@@ -29,8 +29,8 @@
         '</span>' +
         (isVideo ? '<span class="tile__badge" aria-hidden="true">&#9654;</span>' : "") +
         '<span class="tile__overlay">' +
-          '<span class="tile__title">' + esc(p.titleKo) + '</span>' +
           '<span class="tile__meta">' + esc(label) + ' | ' + esc(ym) + '</span>' +
+          '<span class="tile__title">' + esc(p.titleKo) + '</span>' +
         '</span>' +
       '</a>'
     );
