@@ -96,6 +96,9 @@
           <span class="eyebrow">CONTACT</span>
           <p class="subhead" style="margin-bottom:24px">새로운 프로젝트 제안이나 협업 문의를 남겨 주세요.</p>
           <form data-contact-form novalidate>
+            <!-- Web3Forms: 아래 value에 본인 액세스 키를 붙여넣으세요 (web3forms.com에서 이메일 입력 후 발급) -->
+            <input type="hidden" name="access_key" value="8a0d9743-4afa-4333-94c9-2b715642467a" />
+            <input type="checkbox" name="botcheck" tabindex="-1" style="display:none" aria-hidden="true" />
             <div class="form-grid">
               <div class="field">
                 <label for="h-name">이름 · Name</label>
@@ -115,7 +118,7 @@
               <a class="btn btn-secondary" data-mailto href="mailto:orylo0424@gmail.com">메일 앱으로 보내기</a>
             </div>
             <p class="form-status body" data-form-status></p>
-            <p class="form-note">* 현재 전송 기능은 준비 중입니다. 버튼을 누르면 메일 앱이 열립니다.</p>
+            <p class="form-note">* 보내기를 누르면 메시지가 orylo0424@gmail.com 으로 전송됩니다. (전송이 안 되면 ‘메일 앱으로 보내기’ 이용)</p>
           </form>
         </div>
       </div>

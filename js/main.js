@@ -299,7 +299,7 @@
     overlay.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", shut); });
   }
 
-  /* ---- Contact form (UI only) ---- */
+  /* ---- Contact form → Web3Forms 전송 ---- */
   function initForm() {
     document.querySelectorAll("[data-contact-form]").forEach(function (form) {
       var status = form.querySelector("[data-form-status]");
@@ -310,15 +310,48 @@
         var email = (data.get("email") || "").toString().trim();
         var msg = (data.get("message") || "").toString().trim();
 
-        if (status) {
-          status.classList.add("is-visible");
-          status.textContent = "감사합니다, " + (name || "방문자") + "님! 메일 전송 기능은 준비 중이에요. 아래 버튼으로 바로 메일을 보내실 수 있습니다.";
-        }
+        // 메일 앱 fallback 링크 갱신
         var mailto = "mailto:orylo0424@gmail.com?subject=" +
           encodeURIComponent("[Portfolio] " + (name ? name + "님의 문의" : "문의")) +
           "&body=" + encodeURIComponent(msg + "\n\n— " + name + " (" + email + ")");
-        var btn = form.querySelector("[data-mailto]");
-        if (btn) btn.setAttribute("href", mailto);
+        var mailBtn = form.querySelector("[data-mailto]");
+        if (mailBtn) mailBtn.setAttribute("href", mailto);
+
+        function setStatus(t) { if (status) { status.classList.add("is-visible"); status.textContent = t; } }
+
+        var key = (data.get("access_key") || "").toString().trim();
+        if (!key || key.indexOf("WEB3FORMS") !== -1 || key.indexOf("여기에") !== -1) {
+          setStatus("메일 전송 키가 아직 설정되지 않았어요. 아래 ‘메일 앱으로 보내기’ 버튼을 이용해 주세요.");
+          return;
+        }
+
+        if (!data.get("subject")) data.append("subject", "[Portfolio 문의] " + (name ? name + "님" : "새 메시지"));
+
+        var submitBtn = form.querySelector('button[type="submit"]');
+        var origText = submitBtn ? submitBtn.textContent : "";
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "보내는 중…"; }
+        setStatus("전송 중이에요…");
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: data
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (res) {
+            if (res && res.success) {
+              form.reset();
+              setStatus("감사합니다, " + (name || "방문자") + "님! 메시지가 전송됐어요. 곧 회신드릴게요.");
+            } else {
+              setStatus("전송에 실패했어요. 아래 ‘메일 앱으로 보내기’ 버튼을 이용해 주세요.");
+            }
+          })
+          .catch(function () {
+            setStatus("전송 중 오류가 났어요. 아래 ‘메일 앱으로 보내기’ 버튼을 이용해 주세요.");
+          })
+          .then(function () {
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = origText; }
+          });
       });
     });
   }
