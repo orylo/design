@@ -22,10 +22,19 @@
     var label = catLabel[p.category] || "Work";   // 3개 카테고리 중 하나로 통일
     var ym = String(p.date || "").replace("-", ".");   // 2024-12 → 2024.12
     var isVideo = hasTag(p, "Video") || hasTag(p, "Film");
+    // 호버 프리뷰: previewVideo(mp4)가 있으면 영상, 없으면 gif
+    var previewMedia = p.previewVideo
+      ? '<video class="tile__preview" src="' + esc(p.previewVideo) + '" muted loop playsinline preload="metadata"></video>'
+      : '<img class="tile__preview" src="' + esc(p.preview || ("assets/work/" + p.slug + "/preview.gif")) + '" alt="" loading="lazy" onerror="this.remove()">';
+    var hoverAttrs = p.previewVideo
+      ? ' onmouseenter="var v=this.querySelector(\'video\');if(v){try{v.currentTime=0;v.play()}catch(e){}}" onmouseleave="var v=this.querySelector(\'video\');if(v)v.pause()"'
+      : "";
     return (
-      '<a class="tile" href="project.html?slug=' + encodeURIComponent(p.slug) + '" aria-label="' + esc(p.titleKo) + '">' +
+      '<a class="tile' + (p.previewContain ? " tile--contain" : "") + '" href="project.html?slug=' + encodeURIComponent(p.slug) + '" aria-label="' + esc(p.titleKo) + '"' + hoverAttrs + '>' +
         '<span class="tile__media color-block--' + esc(p.color) + '" style="background:var(--color-block-' + esc(p.color) + ')">' +
-          esc(p.titleEn) +
+          '<span class="tile__ph">' + esc(p.titleEn) + '</span>' +
+          '<img class="tile__thumb" src="' + esc(p.thumb || ("assets/work/" + p.slug + "/thumb.jpg")) + '" alt="" loading="lazy" onerror="this.remove()">' +
+          previewMedia +
         '</span>' +
         (isVideo ? '<span class="tile__badge" aria-hidden="true">&#9654;</span>' : "") +
         '<span class="tile__overlay">' +
@@ -94,7 +103,8 @@
       var body = [].concat(s.body || []).map(function (t) {
         return '<p class="body-lg" style="margin-bottom:16px">' + esc(t) + "</p>";
       }).join("");
-      return '<div class="container section detail-body">' +
+      var cls = "container section detail-body" + (s.align === "center" ? " detail-body--center" : "");
+      return '<div class="' + cls + '">' +
         (s.title ? '<h2 class="headline" style="margin-bottom:16px">' + esc(s.title) + "</h2>" : "") +
         body + "</div>";
     }
@@ -127,6 +137,18 @@
       for (var i = 1; i <= n; i++) g += '<div class="img-ph">IMAGE ' + i + "</div>";
       return '<div class="container section"><div class="detail-gallery">' + g + "</div></div>";
     }
+    if (s.type === "tiles") {
+      var t = (s.images || []).map(function (u) {
+        return '<img src="' + esc(u) + '" alt="" loading="lazy" onerror="this.remove()">';
+      }).join("");
+      return '<div class="container section"><div class="detail-tiles">' + t + "</div></div>";
+    }
+    if (s.type === "images") {
+      var im = (s.images || []).map(function (u) {
+        return '<div class="img-ph"><img src="' + esc(u) + '" alt="" loading="lazy" onerror="this.parentNode.remove()"></div>';
+      }).join("");
+      return '<div class="container section"><div class="detail-gallery">' + im + "</div></div>";
+    }
     return "";
   }
 
@@ -148,25 +170,74 @@
 
     document.title = p.titleEn + " — orylo";
 
+    // 특정 프로젝트는 흰 배경으로
+    if (p.slug === "chaegeun" || p.slug === "mukkuri-hangwa" || p.slug === "joseon-hats") {
+      document.body.classList.add("detail-light");
+    }
+    // 흡연자 — 검정 배경 다크 테마
+    if (p.slug === "heupyeonja") {
+      document.body.classList.add("detail-dark");
+    }
+
     var catLbl = catLabel[p.category] || p.category;
     var tags = (p.tags || []).join(" · ");
     var prev = all[idx - 1]; // 더 최신
     var next = all[idx + 1]; // 더 과거
 
-    var linkBlock = "";
+    // 임베드형(유튜브) 링크는 본문에, 일반 버튼형 링크는 페이지 하단 우측에 표시
+    var linkEmbed = "", linkButton = "";
     if (p.link && p.link.url) {
       var emb = ytEmbed(p.link.url);
-      linkBlock = emb
-        ? '<div class="container section"><div class="detail-embed"><iframe src="' + esc(emb) +
-            '" title="video" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>'
-        : '<div class="container section"><a class="btn btn-primary" target="_blank" rel="noopener" href="' +
-            esc(p.link.url) + '">' + esc(p.link.label || "View") + " ↗</a></div>";
+      if (emb) {
+        linkEmbed = '<div class="container section"><div class="detail-embed"><iframe src="' + esc(emb) +
+          '" title="video" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>';
+      } else {
+        linkButton = '<div class="container detail-extlink"><a class="btn btn-primary" target="_blank" rel="noopener" href="' +
+          esc(p.link.url) + '">' + esc(p.link.label || "View") + " ↗</a></div>";
+      }
     }
 
     var overview = (p.overview || []).map(function (t) {
       return '<p class="body-lg" style="margin-bottom:16px">' + esc(t) + "</p>";
     }).join("");
+    var overviewBlock = overview
+      ? '<div class="container section-pad detail-body"><h2 class="headline" style="margin-bottom:16px">Overview</h2>' + overview + "</div>"
+      : "";
     var sections = (p.sections || []).map(sectionHTML).join("");
+
+    // 이미지: 프로젝트에 명시된 URL(p.hero/p.gallery)이 있으면 사용, 없으면 assets 규칙 경로
+    var heroSrc = p.hero || ("assets/work/" + p.slug + "/hero.jpg");
+    // gallery: 명시 배열이 있으면 그대로(빈 배열이면 표시 안 함), 없으면 규칙 경로
+    var galList = p.gallery
+      ? p.gallery
+      : ["assets/work/" + p.slug + "/01.jpg", "assets/work/" + p.slug + "/02.jpg", "assets/work/" + p.slug + "/03.jpg"];
+    var videoTop = p.video
+      ? '<div class="container detail-videotop"><div class="ratio"><iframe src="' + esc(p.video) +
+        '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>'
+      : "";
+    // 페이지 맨 아래 크레딧 블록(가운데 정렬)
+    var creditBlock = (p.credit && p.credit.length)
+      ? '<div class="container section detail-body detail-body--center"><h2 class="headline" style="margin-bottom:16px">Credit</h2>' +
+        [].concat(p.credit).map(function (line) { return '<p class="body" style="margin:0 0 4px">' + esc(line) + "</p>"; }).join("") +
+        "</div>"
+      : "";
+    var galleryHTML = galList.map(function (item) {
+      // 2칼럼 행: { row: [urlA, urlB] }
+      if (item && typeof item === "object" && item.row) {
+        var cells = [].concat(item.row).map(function (u) {
+          return '<img src="' + esc(u) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">';
+        }).join("");
+        return '<div class="img-ph img-row">' + cells + "</div>";
+      }
+      var u = (typeof item === "string") ? item : (item && item.src) || "";
+      var narrow = (typeof item === "object" && item && item.narrow);
+      var cls = narrow ? "img-ph img-ph--narrow" : "img-ph";
+      if (/\.mp4(\b|#|$)/i.test(u)) {
+        return '<div class="' + cls + '"><video src="' + esc(u) +
+          '" autoplay muted loop playsinline controls preload="metadata"></video></div>';
+      }
+      return '<div class="' + cls + '"><img src="' + esc(u) + '" alt="" loading="lazy" onerror="this.parentNode.remove()"></div>';
+    }).join("");
 
     host.innerHTML =
       '<div class="container detail-head">' +
@@ -176,7 +247,7 @@
         '<p class="subhead" style="margin-top:16px;max-width:60ch">' + esc(p.concept || "") + "</p>" +
       "</div>" +
 
-      '<div class="detail-hero img-ph">HERO IMAGE PLACEHOLDER</div>' +
+      '<div class="detail-hero img-ph"><img class="detail-hero__img" src="' + esc(heroSrc) + '" alt="" onerror="this.parentNode.remove()"></div>' +
 
       '<div class="container">' +
         '<div class="detail-meta">' +
@@ -193,16 +264,16 @@
         "</div>" +
       "</div>" +
 
-      '<div class="container section-pad detail-body">' +
-        '<h2 class="headline" style="margin-bottom:16px">Overview</h2>' + overview +
-      "</div>" +
+      overviewBlock +
 
-      linkBlock +
+      linkEmbed +
+      videoTop +
       sections +
 
-      '<div class="container section"><div class="detail-gallery">' +
-        '<div class="img-ph">IMAGE 1</div><div class="img-ph">IMAGE 2</div><div class="img-ph">IMAGE 3</div>' +
-      "</div></div>" +
+      '<div class="container"><div class="detail-gallery">' + galleryHTML + "</div></div>" +
+
+      creditBlock +
+      linkButton +
 
       '<div class="container"><div class="detail-nav">' +
         (next ? '<a class="btn-ghost btn" href="project.html?slug=' + encodeURIComponent(next.slug) + '">← ' + esc(next.titleKo) + "</a>" : "<span></span>") +
