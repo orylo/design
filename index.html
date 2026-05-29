@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>orylo — Designer Portfolio</title>
+  <meta name="description" content="디자이너 이성희(orylo)의 포트폴리오. 브랜딩, 그래픽, UX·UI, 모션, 타이포그래피." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=optional" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-home">
+
+  <!-- ===== Site top: overlay nav ===== -->
+  <div class="site-top" data-sitetop>
+    <header class="top-nav">
+      <div class="container top-nav__inner">
+        <a class="brand" href="index.html">orylo</a>
+        <nav class="nav-links" aria-label="주 메뉴">
+          <a class="btn" href="work.html">Work</a>
+          <a class="btn" href="about.html">About</a>
+          <a class="btn" href="contact.html">Contact</a>
+        </nav>
+        <button class="btn btn-icon nav-toggle" data-nav-toggle aria-label="메뉴 열기">&#9776;</button>
+      </div>
+    </header>
+  </div>
+
+  <div class="nav-overlay" data-nav-overlay>
+    <div class="nav-overlay__top">
+      <a class="brand" href="index.html">orylo</a>
+      <button class="btn btn-icon" data-nav-close aria-label="메뉴 닫기">&#10005;</button>
+    </div>
+    <nav class="nav-overlay__links" aria-label="모바일 메뉴">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-overlay__cta">
+      <a class="btn btn-secondary" href="mailto:orylo0424@gmail.com">Email me</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== Full-screen hero (GIF 자동재생) ===== -->
+    <section class="hero-full">
+      <div class="hero-full__media">
+        <!--
+        GIF 자동재생: assets/hero.gif 를 넣고 아래 한 줄을 살리세요.
+        <img src="assets/hero.gif" alt="" />
+        영상으로 넣고 싶다면(소리 없이 자동반복):
+        <video autoplay muted loop playsinline poster="assets/hero-poster.jpg"><source src="assets/hero.mp4" type="video/mp4" /></video>
+        -->
+        <div class="hero-full__placeholder">
+          <span class="caption">GIF PLACEHOLDER</span>
+        </div>
+      </div>
+      <div class="hero-full__scrim"></div>
+      <div class="hero-full__scroll caption">SCROLL &#8595;</div>
+    </section>
+
+    <!-- ===== Selected Work ===== -->
+    <section class="container section">
+      <div class="section-head">
+        <div class="section-head__title">
+          <span class="eyebrow">SELECTED WORK</span>
+          <p class="subhead">최근 작업 중 일부를 골라 소개합니다.</p>
+        </div>
+      </div>
+      <div class="tile-grid tile-grid--home" data-featured-grid></div>
+      <a class="btn btn-secondary btn-block view-all" href="work.html">View all</a>
+    </section>
+
+    <!-- ===== About excerpt ===== -->
+    <section class="container section color-block-wrap">
+      <div class="color-block color-block--navy">
+        <div class="color-block__inner">
+          <span class="eyebrow">ABOUT</span>
+          <p class="subhead">저는 사용자가 더 깊은 감정을 느끼도록 스토리텔링에 집중하는 디자이너입니다. 그래픽·영상·인터랙션·AI 등 다양한 매체를 넘나들며, 기술의 원리를 설명하기보다 사람이 기술을 감정으로 경험하게 만드는 데 집중합니다.</p>
+          <a class="btn btn-on-dark" href="about.html">View all →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="container section-pad color-block-wrap">
+      <div class="color-block color-block--cream">
+        <div class="color-block__inner" style="max-width:none">
+          <span class="eyebrow">CONTACT</span>
+          <p class="subhead" style="margin-bottom:24px">새로운 프로젝트 제안이나 협업 문의를 남겨 주세요.</p>
+          <form data-contact-form novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="h-name">이름 · Name</label>
+                <input id="h-name" name="name" type="text" placeholder="홍길동" required />
+              </div>
+              <div class="field">
+                <label for="h-email">이메일 · Email</label>
+                <input id="h-email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="field field--full">
+                <label for="h-msg">메시지 · Message</label>
+                <textarea id="h-msg" name="message" placeholder="어떤 프로젝트를 구상 중이신가요?" required></textarea>
+              </div>
+            </div>
+            <div class="hero__cta" style="margin-top:24px">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <a class="btn btn-secondary" data-mailto href="mailto:orylo0424@gmail.com">메일 앱으로 보내기</a>
+            </div>
+            <p class="form-status body" data-form-status></p>
+            <p class="form-note">* 현재 전송 기능은 준비 중입니다. 버튼을 누르면 메일 앱이 열립니다.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wordmark">orylo</div>
+      <p class="footer__tag body">디자이너 이성희(orylo)의 포트폴리오. <br>* BI 로고는 추후 적용 예정 (현재 워드마크 placeholder).</p>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4 class="caption">Menu</h4>
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="caption">Contact</h4>
+          <ul>
+            <li><a href="mailto:orylo0424@gmail.com">orylo0424@gmail.com</a></li>
+            <li><a href="contact.html">Contact form</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="caption">Social</h4>
+          <ul>
+            <li><a href="#" rel="noopener">Instagram</a></li>
+            <li><a href="#" rel="noopener">Behance</a></li>
+            <li><a href="#" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="caption">Based in</h4>
+          <ul>
+            <li><a href="#">Seoul, South Korea</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="caption">© <span data-year>2026</span> orylo. All rights reserved.</span>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
