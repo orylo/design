@@ -17,6 +17,7 @@
   <meta property="og:image" content="assets/og/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/style.css" />
+  <script data-langboot>(function(){try{var s=localStorage.getItem("lang");var n=(navigator.language||"en").toLowerCase();var l=(s==="ko"||s==="en")?s:(n.indexOf("ko")===0?"ko":"en");document.documentElement.lang=l;}catch(e){}})();</script>
 </head>
 <body class="is-home">
 
@@ -83,7 +84,8 @@
       <div class="color-block color-block--lime">
         <div class="color-block__inner">
           <span class="eyebrow">ABOUT</span>
-          <p class="subhead">orylo(이성희)는 사용자가 더 깊은 감정을 느끼도록 스토리텔링에 집중하는 디자이너입니다. 그래픽·영상·인터랙션·AI 등 다양한 매체를 넘나들며, 기술의 원리를 설명하기보다 사람이 기술을 감정으로 경험하게 만드는 데 집중합니다.</p>
+          <p class="subhead lang-ko">orylo(이성희)는 사용자가 더 깊은 감정을 느끼도록 스토리텔링에 집중하는 디자이너입니다. 그래픽·영상·인터랙션·AI 등 다양한 매체를 넘나들며, 기술의 원리를 설명하기보다 사람이 기술을 감정으로 경험하게 만드는 데 집중합니다.</p>
+          <p class="subhead lang-en">orylo (Lee Sunghee) is a designer focused on storytelling that lets people feel more deeply. Moving across graphics, video, interaction, and AI, the focus is less on explaining how technology works and more on helping people experience it through emotion.</p>
           <a class="btn btn-success" href="about.html">View all →</a>
         </div>
       </div>
@@ -94,7 +96,8 @@
       <div class="color-block color-block--cream">
         <div class="color-block__inner" style="max-width:none">
           <span class="eyebrow">CONTACT</span>
-          <p class="subhead" style="margin-bottom:24px">새로운 프로젝트 제안이나 협업 문의를 남겨 주세요.</p>
+          <p class="subhead lang-ko" style="margin-bottom:24px">새로운 프로젝트 제안이나 협업 문의를 남겨 주세요.</p>
+          <p class="subhead lang-en" style="margin-bottom:24px">Have a new project or collaboration in mind? Drop me a message.</p>
           <form data-contact-form novalidate>
             <!-- Web3Forms: 아래 value에 본인 액세스 키를 붙여넣으세요 (web3forms.com에서 이메일 입력 후 발급) -->
             <input type="hidden" name="access_key" value="8a0d9743-4afa-4333-94c9-2b715642467a" />
@@ -110,15 +113,16 @@
               </div>
               <div class="field field--full">
                 <label for="h-msg">메시지 · Message</label>
-                <textarea id="h-msg" name="message" placeholder="어떤 프로젝트를 구상 중이신가요?" required></textarea>
+                <textarea id="h-msg" name="message" placeholder="" required></textarea>
               </div>
             </div>
             <div class="hero__cta" style="margin-top:24px">
               <button class="btn btn-primary" type="submit">Send message</button>
-              <a class="btn btn-secondary" data-mailto href="mailto:orylo0424@gmail.com">메일 앱으로 보내기</a>
+              <a class="btn btn-secondary" data-mailto href="mailto:orylo0424@gmail.com"><span class="lang-ko">메일 앱으로 보내기</span><span class="lang-en">Open in mail app</span></a>
             </div>
             <p class="form-status body" data-form-status></p>
-            <p class="form-note">* 보내기를 누르면 메시지가 orylo0424@gmail.com 으로 전송됩니다. (전송이 안 되면 ‘메일 앱으로 보내기’ 이용)</p>
+            <p class="form-note lang-ko">* 보내기를 누르면 메시지가 orylo0424@gmail.com 으로 전송됩니다. (전송이 안 되면 ‘메일 앱으로 보내기’ 이용)</p>
+            <p class="form-note lang-en">* Pressing send delivers your message to orylo0424@gmail.com. (If it fails, use “Open in mail app”.)</p>
           </form>
         </div>
       </div>
@@ -129,7 +133,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wordmark">orylo</div>
-      <p class="footer__tag body">디자이너 이성희(orylo)의 포트폴리오. <br>* BI 로고는 추후 적용 예정 (현재 워드마크 placeholder).</p>
+      <p class="footer__tag body lang-ko">디자이너 이성희(orylo)의 포트폴리오. <br>* BI 로고는 추후 적용 예정 (현재 워드마크 placeholder).</p>
+      <p class="footer__tag body lang-en">Portfolio of designer Lee Sunghee (orylo). <br>* The BI logo is a placeholder for now (wordmark in use).</p>
       <div class="footer__cols">
         <div class="footer__col">
           <h4 class="caption">Menu</h4>
@@ -169,6 +174,7 @@
   </footer>
 
   <script src="js/projects.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

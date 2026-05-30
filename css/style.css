@@ -196,11 +196,34 @@ em { font-style: normal; font-weight: 700; }
 .nav-links .btn {
   background: var(--color-ash-white); color: var(--ink); box-shadow: none;
   font-size: 16px; padding: 12px 20px; min-height: 44px; border-radius: var(--radius-card);
+  min-width: 104px; white-space: nowrap;   /* 폰트 로딩과 무관하게 버튼 박스 크기 고정 → 페이지 전환 시 덜컹임 방지 */
 }
 .nav-links .btn:hover { background: var(--color-acid-lime); color: var(--ink); }
 .nav-links a[aria-current="page"] { background: var(--color-digital-orange); color: var(--color-pure-white); }
 .nav-links a[aria-current="page"]:hover { background: var(--color-digital-orange); filter: brightness(1.05); color: var(--color-pure-white); }
 .nav-toggle { display: none; }
+
+/* 언어 토글 — KO | EN 세그먼트(현재 언어 강조) */
+.nav-links .lang-toggle {
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 3px; border-radius: var(--radius-pill);
+  box-shadow: inset 0 0 0 2px var(--ink); margin-left: var(--space-xs);
+}
+.lang-toggle .lang-opt {
+  border: none; background: transparent; cursor: pointer;
+  font-family: var(--font-body); font-weight: 700; font-size: 13px; letter-spacing: .04em;
+  color: var(--ink); opacity: .4; padding: 6px 12px; border-radius: var(--radius-pill);
+  min-height: 32px; transition: background-color .15s ease, color .15s ease, opacity .15s ease;
+}
+.lang-toggle .lang-opt:hover { opacity: .75; }
+.lang-toggle .lang-opt.is-active { background: var(--ink); color: var(--bg); opacity: 1; }
+/* 모바일 오버레이용 */
+.lang-toggle--m { display: flex; width: 100%; margin-top: var(--space-sm); justify-content: center; }
+.lang-toggle--m .lang-opt { flex: 1; font-size: 15px; min-height: 40px; }
+
+/* 듀얼 언어 산문 토글 — documentElement.lang 기준 */
+html[lang="en"] .lang-ko { display: none; }
+html[lang="ko"] .lang-en { display: none; }
 
 /* Home: nav overlays the light hero */
 body.is-home .site-top { position: fixed; left: 0; right: 0; top: 0; }

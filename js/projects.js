@@ -93,16 +93,45 @@ const PROJECTS = [
     ],
   },
   {
-    slug: "galaxy-studio", titleEn: "Galaxy Studio", titleKo: "갤럭시 스튜디오",
-    category: "brand", tags: ["Experience", "Motion", "Campaign"],
-    date: "2022-09", period: "2021 – 2022", color: "navy", featured: false,
-    concept: "“사람은 기능이 아니라 ‘내가 뭘 했는지’를 기억한다” — 행동 중심 브랜드 체험.",
-    role: ["Experience Content Design", "Personalization System", "PPM & Shoot Direction"],
+    slug: "galaxy-studio-fold4", titleEn: "Galaxy Studio — Z Fold4·Flip4", titleKo: "갤럭시 스튜디오 — Z Fold4·Flip4",
+    category: "brand", tags: ["Experience", "Personalization", "Campaign"],
+    date: "2022-08", period: "2022", color: "navy", featured: false,
+    concept: "여덟 가지 성향으로 ‘나만의 폴더블’을 찾다 — 퍼스널라이징 경험 시스템.",
+    role: ["Experience Content Design", "Personalization System", "Visual System"],
     tools: ["Photoshop", "Illustrator", "Premiere Pro", "After Effects"],
-    client: "삼성전자 / 제일기획", year: "2021–2022",
+    client: "삼성전자 / 제일기획", year: "2022",
     overview: [
-      "삼성 폴더블폰의 핵심 기능을 오프라인 공간에서 직접 체험하게 한 BTL 프로젝트입니다. Z Flip·Fold 3·4, S22까지 3개 시즌에 걸쳐 ‘기능 인지 → 행동 유도 → 결과 공유’로 이어지는 반복 적용 가능한 콘텐츠 구조를 설계하고 실행했습니다.",
-      "방향 기준이 없던 상황에서 소비자 성향 기반의 8개 퍼스널라이징 카테고리 시스템을 제안해 공식 가이드로 채택시켰고, 8유형을 캐릭터화한 게임형 앱으로 확장해 브랜드 경험을 하나의 시각 언어로 통합했습니다.",
+      "Z Fold4·Flip4 시즌의 갤럭시 스튜디오입니다. 폴더블이라는 새로운 폼팩터를 ‘기능 설명’이 아니라 ‘내가 직접 해본 경험’으로 기억되게 만드는 데 집중했습니다.",
+      "방향 기준이 없던 상황에서 소비자 성향을 기반으로 한 8개 퍼스널라이징 카테고리 시스템을 제안해 공식 가이드로 채택시켰습니다. 이 8개 유형을 캐릭터화한 게임형 앱으로 확장해, 방문자가 자신에게 맞는 폴더블 사용법을 발견하고 공유하도록 설계하며 브랜드 경험을 하나의 시각 언어로 통합했습니다.",
+    ],
+    sections: [
+      { type: "quote", text: "사람은 기능이 아니라 ‘내가 뭘 했는지’를 기억한다 — 행동으로 남는 브랜드 경험을 지향했습니다." },
+    ],
+  },
+  {
+    slug: "galaxy-studio-s22", titleEn: "Galaxy Studio — S22", titleKo: "갤럭시 스튜디오 — S22",
+    category: "brand", tags: ["Experience", "Space", "Campaign"],
+    date: "2022-03", period: "2022", color: "navy", featured: false,
+    concept: "낮의 화장 공간과 밤의 정원 — S22 카메라를 ‘공간 경험’으로 번역하다.",
+    role: ["Experience Content Design", "Space Direction", "PPM & Shoot Direction"],
+    tools: ["Photoshop", "Illustrator", "Premiere Pro", "After Effects"],
+    client: "삼성전자 / 제일기획", year: "2022",
+    overview: [
+      "갤럭시 S22 시리즈를 직접 경험하는 공간으로, 전국 삼성 디지털프라자·대형 쇼핑몰·백화점 등 20여 곳 베뉴와 40여 개 대학 캠퍼스에서 운영했습니다.",
+      "다채로운 색감과 디테일을 담는 ‘낮의 화장 공간’과, 흔들림 없이 밝게 찍히는 ‘밤의 정원 공간’에서 극대화된 카메라 성능을 체험하도록 설계했습니다. 프로젝트 최초로 전시 공간 자체를 광고로 삼은 TVCF를 도입했고, 대면 수업이 재개되는 시기에 맞춰 ‘갤럭시 스튜디오 in campus Part 2’로 캠퍼스까지 확장했습니다.",
+    ],
+  },
+  {
+    slug: "galaxy-studio-fold3", titleEn: "Galaxy Studio — Z Fold3·Flip3", titleKo: "갤럭시 스튜디오 — Z Fold3·Flip3",
+    category: "brand", tags: ["Experience", "Interactive", "Campaign"],
+    date: "2021-08", period: "2021", color: "navy", featured: false,
+    concept: "행동으로 기억되는 폴더블 첫 시즌 — 참여형 브랜드 체험.",
+    role: ["Experience Content Design", "Interactive Content", "Motion Graphics"],
+    tools: ["Photoshop", "Illustrator", "Premiere Pro", "After Effects"],
+    client: "삼성전자 / 제일기획", year: "2021",
+    overview: [
+      "삼성 폴더블폰 Z Fold3·Flip3를 오프라인에서 직접 체험하게 한 갤럭시 스튜디오의 첫 시즌입니다. 전국 삼성 디지털프라자를 비롯한 다수 베뉴에서 ‘기능 인지 → 행동 유도 → 결과 공유’로 이어지는, 시즌마다 반복 적용 가능한 콘텐츠 구조를 설계했습니다.",
+      "MZ세대가 열광하는 레이블링 게임 ‘나만의 폴더블 캐릭터 테스트’로 3세대 갤럭시 Z의 혁신 기능을 체험하게 했고, 다양한 콜라보 브랜드와 함께한 ‘나만의 폴더블 라이프’ 참여 이벤트, 폴더블의 접힘을 활용해 마스크 속 숨겨졌던 웃음을 되찾아주는 ‘스마일 새로 활짝’ 이벤트까지 — 코로나 시기의 정서에 맞춘 참여형 경험을 기획했습니다.",
     ],
   },
   {
@@ -300,6 +329,13 @@ const PROJECTS = [
     overview: [
       "한국의 전통 운세 문화인 사주(四柱)를 생성형 AI와 결합한 인터랙티브 콘텐츠입니다. 이름·생년월일·태어난 시각 기반의 명리학 원리를 GPT에 학습시켜 대화형 상담 챗봇으로 구현했습니다.",
       "단순 정보 제공을 넘어 사용자의 고민을 함께 나누고 위로하는 정서적 접점을 설계했습니다. 예를 들어 ‘불의 기운이 강한 사람’에게는 에너지 넘치는 색과 리듬의 인터페이스를 제공합니다.",
+    ],
+    sections: [
+      { type: "text", title: "어떻게 작동하나", body: [
+        "이름·생년월일·태어난 시각을 입력하면, 명리학 원리를 학습한 GPT가 사주를 풀어 대화형으로 상담합니다.",
+        "대화 끝에는 사용자의 사주에 맞춘 ‘포춘 카드’를 건네, 운세를 손에 쥐는 하나의 경험으로 마무리합니다.",
+      ]},
+      { type: "quote", text: "운세를 ‘정보’가 아니라 ‘위로’로 — 같은 질문에도 사람마다 다른 색과 리듬으로 응답하도록 설계했습니다." },
     ],
   },
   {

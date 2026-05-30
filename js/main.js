@@ -15,6 +15,25 @@
     });
   }
 
+  /* ---- i18n 헬퍼 (영어 없으면 한국어 폴백) ---- */
+  var LANG = window.LANG || "ko";
+  function T(k) { return (typeof window.t === "function") ? window.t(k) : k; }
+  function projEN(slug) { return (window.PROJECTS_EN || {})[slug]; }
+  function fld(p, field) {
+    var e = projEN(p.slug);
+    if (LANG === "en" && e && e[field] != null) return e[field];
+    return p[field];
+  }
+  function ptitle(p) { return LANG === "en" ? (p.titleEn || p.titleKo) : (p.titleKo || p.titleEn); }
+  function linkLabel(p) {
+    var l = (p.link && p.link.label) || "View";
+    if (LANG === "en") {
+      var map = { "Behance에서 보기": "View on Behance", "Instagram에서 보기": "View on Instagram" };
+      return map[l] || l;
+    }
+    return l;
+  }
+
   /* ---- Project tile markup ---- */
   function hasTag(p, t) { return (p.tags || []).indexOf(t) !== -1; }
 
@@ -39,7 +58,7 @@
         (isVideo ? '<span class="tile__badge" aria-hidden="true">&#9654;</span>' : "") +
         '<span class="tile__overlay">' +
           '<span class="tile__meta">' + esc(label) + ' | ' + esc(ym) + '</span>' +
-          '<span class="tile__title">' + esc(p.titleKo) + '</span>' +
+          '<span class="tile__title">' + esc(ptitle(p)) + '</span>' +
         '</span>' +
       '</a>'
     );
@@ -84,9 +103,8 @@
       });
       host.innerHTML = list.length
         ? list.map(tileHTML).join("")
-        : '<p class="body" style="opacity:.6">해당 카테고리의 작업이 아직 없습니다.</p>';
-      var count = document.querySelector("[data-work-count]");
-      if (count) count.textContent = list.length;
+        : '<p class="body" style="opacity:.6">' + esc(T("no_works")) + "</p>";
+      document.querySelectorAll("[data-work-count]").forEach(function (c) { c.textContent = list.length; });
     }
     paint();
   }
@@ -162,9 +180,9 @@
     var p = all[idx];
 
     if (!p) {
-      host.innerHTML = '<div class="container section-pad"><h1 class="display-lg">작업을 찾을 수 없어요</h1>' +
-        '<p class="body" style="margin-top:16px">요청하신 프로젝트가 없습니다.</p>' +
-        '<a class="btn btn-primary" style="margin-top:24px" href="work.html">← Work로 돌아가기</a></div>';
+      host.innerHTML = '<div class="container section-pad"><h1 class="display-lg">' + esc(T("not_found_title")) + "</h1>" +
+        '<p class="body" style="margin-top:16px">' + esc(T("not_found_body")) + "</p>" +
+        '<a class="btn btn-primary" style="margin-top:24px" href="work.html">' + esc(T("back_to_work")) + "</a></div>";
       return;
     }
 
@@ -193,17 +211,17 @@
           '" title="video" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>';
       } else {
         linkButton = '<div class="container detail-extlink"><a class="btn btn-primary" target="_blank" rel="noopener" href="' +
-          esc(p.link.url) + '">' + esc(p.link.label || "View") + " ↗</a></div>";
+          esc(p.link.url) + '">' + esc(linkLabel(p)) + " ↗</a></div>";
       }
     }
 
-    var overview = (p.overview || []).map(function (t) {
+    var overview = (fld(p, "overview") || []).map(function (t) {
       return '<p class="body-lg" style="margin-bottom:16px">' + esc(t) + "</p>";
     }).join("");
     var overviewBlock = overview
-      ? '<div class="container section-pad detail-body"><h2 class="headline" style="margin-bottom:16px">Overview</h2>' + overview + "</div>"
+      ? '<div class="container section-pad detail-body"><h2 class="headline" style="margin-bottom:16px">' + esc(T("overview")) + "</h2>" + overview + "</div>"
       : "";
-    var sections = (p.sections || []).map(sectionHTML).join("");
+    var sections = (fld(p, "sections") || []).map(sectionHTML).join("");
 
     // 이미지: 프로젝트에 명시된 URL(p.hero/p.gallery)이 있으면 사용, 없으면 assets 규칙 경로
     var heroSrc = p.hero || ("assets/work/" + p.slug + "/hero.jpg");
@@ -217,8 +235,8 @@
       : "";
     // 페이지 맨 아래 크레딧 블록(가운데 정렬)
     var creditBlock = (p.credit && p.credit.length)
-      ? '<div class="container section detail-body detail-body--center"><h2 class="headline" style="margin-bottom:16px">Credit</h2>' +
-        [].concat(p.credit).map(function (line) { return '<p class="body" style="margin:0 0 4px">' + esc(line) + "</p>"; }).join("") +
+      ? '<div class="container section detail-body detail-body--center"><h2 class="headline" style="margin-bottom:16px">' + esc(T("credit")) + "</h2>" +
+        [].concat(fld(p, "credit") || p.credit).map(function (line) { return '<p class="body" style="margin:0 0 4px">' + esc(line) + "</p>"; }).join("") +
         "</div>"
       : "";
     var galleryHTML = galList.map(function (item) {
@@ -241,10 +259,10 @@
 
     host.innerHTML =
       '<div class="container detail-head">' +
-        '<a class="btn btn-secondary" style="padding:8px 18px;min-height:auto" href="work.html">← Back to Work</a>' +
+        '<a class="btn btn-secondary" style="padding:8px 18px;min-height:auto" href="work.html">' + esc(T("back_to_work")) + "</a>" +
         '<p class="eyebrow" style="margin-top:24px;opacity:.6">' + esc(catLbl) + "</p>" +
-        '<h1 class="display-lg" style="margin-top:8px;max-width:18ch">' + esc(p.titleKo) + "</h1>" +
-        '<p class="subhead" style="margin-top:16px;max-width:60ch">' + esc(p.concept || "") + "</p>" +
+        '<h1 class="display-lg" style="margin-top:8px;max-width:18ch">' + esc(ptitle(p)) + "</h1>" +
+        '<p class="subhead" style="margin-top:16px;max-width:60ch">' + esc(fld(p, "concept") || "") + "</p>" +
       "</div>" +
 
       '<div class="detail-hero img-ph"><img class="detail-hero__img" src="' + esc(heroSrc) + '" alt="" onerror="this.parentNode.remove()"></div>' +
@@ -321,16 +339,16 @@
 
         var key = (data.get("access_key") || "").toString().trim();
         if (!key || key.indexOf("WEB3FORMS") !== -1 || key.indexOf("여기에") !== -1) {
-          setStatus("메일 전송 키가 아직 설정되지 않았어요. 아래 ‘메일 앱으로 보내기’ 버튼을 이용해 주세요.");
+          setStatus(T("form_nokey"));
           return;
         }
 
-        if (!data.get("subject")) data.append("subject", "[Portfolio 문의] " + (name ? name + "님" : "새 메시지"));
+        if (!data.get("subject")) data.append("subject", "[Portfolio] " + (name || "New message"));
 
         var submitBtn = form.querySelector('button[type="submit"]');
         var origText = submitBtn ? submitBtn.textContent : "";
-        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "보내는 중…"; }
-        setStatus("전송 중이에요…");
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = T("sending_btn"); }
+        setStatus(T("form_sending"));
 
         fetch("https://api.web3forms.com/submit", {
           method: "POST",
@@ -341,13 +359,13 @@
           .then(function (res) {
             if (res && res.success) {
               form.reset();
-              setStatus("감사합니다, " + (name || "방문자") + "님! 메시지가 전송됐어요. 곧 회신드릴게요.");
+              setStatus(T("form_sent"));
             } else {
-              setStatus("전송에 실패했어요. 아래 ‘메일 앱으로 보내기’ 버튼을 이용해 주세요.");
+              setStatus(T("form_fail"));
             }
           })
           .catch(function () {
-            setStatus("전송 중 오류가 났어요. 아래 ‘메일 앱으로 보내기’ 버튼을 이용해 주세요.");
+            setStatus(T("form_err"));
           })
           .then(function () {
             if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = origText; }
@@ -373,6 +391,57 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  /* ---- 폼 라벨·placeholder 언어별 설정 (영어일 땐 영어만) ---- */
+  function localizeForm() {
+    if (LANG !== "en") return;
+    var labelMap = {
+      "이름 · Name": "Name",
+      "이메일 · Email": "Email",
+      "메시지 · Message": "Message"
+    };
+    document.querySelectorAll("[data-contact-form] label").forEach(function (l) {
+      var k = l.textContent.trim();
+      if (labelMap[k]) l.textContent = labelMap[k];
+    });
+    var phMap = { "홍길동": "Jane Doe", "you@example.com": "you@example.com" };
+    document.querySelectorAll("[data-contact-form] input").forEach(function (i) {
+      var p = i.getAttribute("placeholder");
+      if (p && phMap[p]) i.setAttribute("placeholder", phMap[p]);
+    });
+    document.querySelectorAll('[data-contact-form] textarea[name="message"]').forEach(function (t) {
+      t.setAttribute("placeholder", "What kind of project do you have in mind?");
+    });
+  }
+
+  /* ---- 언어 토글(KO | EN 세그먼트) 주입: 현재 언어 강조 ---- */
+  function injectLangToggle() {
+    function makeToggle(extraCls) {
+      var wrap = document.createElement("div");
+      wrap.className = "lang-toggle" + (extraCls ? " " + extraCls : "");
+      wrap.setAttribute("role", "group");
+      wrap.setAttribute("aria-label", "Language");
+      [["ko", "KO"], ["en", "EN"]].forEach(function (pair) {
+        var code = pair[0], txt = pair[1];
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "lang-opt" + (LANG === code ? " is-active" : "");
+        b.textContent = txt;
+        if (LANG === code) b.setAttribute("aria-current", "true");
+        b.addEventListener("click", function () {
+          if (LANG !== code && typeof window.setLang === "function") window.setLang(code);
+        });
+        wrap.appendChild(b);
+      });
+      return wrap;
+    }
+    document.querySelectorAll(".nav-links").forEach(function (nav) {
+      if (!nav.querySelector(".lang-toggle")) nav.appendChild(makeToggle());
+    });
+    document.querySelectorAll(".nav-overlay__cta").forEach(function (cta) {
+      if (!cta.querySelector(".lang-toggle")) cta.appendChild(makeToggle("lang-toggle--m"));
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderFeatured();
     renderWork();
@@ -381,5 +450,7 @@
     initForm();
     initYear();
     initStickyNav();
+    injectLangToggle();
+    localizeForm();
   });
 })();
