@@ -273,6 +273,20 @@ const PROJECTS = [
 
   /* ---------------- Creative Experiments ---------------- */
   {
+    slug: "home-purrtect", titleEn: "Home Purrtect", titleKo: "냥홀로집에",
+    category: "experiments", tags: ["Game", "Godot", "IP"],
+    date: "2026-06", period: "2026 – (개발 중)", color: "coral", featured: false,
+    concept: "“집사가 없는 사이, 집은 내가 지킨다” — 혼자 남은 고양이의 홈 디펜스 게임.",
+    role: ["Game Design", "Art Direction", "Godot Development"],
+    tools: ["Godot", "GDScript", "Aseprite", "Midjourney"],
+    client: "Personal project", year: "2026–",
+    link: { url: "https://github.com/orylo/home-purrtect", label: "View on GitHub" },
+    overview: [
+      "영화 〈나 홀로 집에〉를 고양이의 시점으로 재해석한 개인 게임 프로젝트입니다. 집사가 집을 비운 사이, 홀로 남은 고양이가 집으로 들어오는 침입자들을 갖가지 장치와 재치로 막아내는 홈 디펜스 게임으로 기획했습니다.",
+      "기존 포트폴리오의 반려동물·고양이 테마를 ‘플레이어가 직접 조작하는 경험’으로 확장하는 시도입니다. Godot 엔진(GDScript)으로 직접 구현하며 기획·아트·개발을 1인 파이프라인으로 진행하고 있습니다.",
+    ],
+  },
+  {
     slug: "idea", titleEn: "IDEÁ", titleKo: "IDEÁ",
     category: "experiments", tags: ["AI", "Branding", "Packaging"],
     date: "2025-05", period: "2025.05", color: "navy", featured: false,

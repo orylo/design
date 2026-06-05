@@ -27,7 +27,7 @@ assets/work/piper/03.jpg
 ```
 
 폴더 이름(=프로젝트 식별자)은 다음과 같아요:
-petnow-brand · max-nose-id · is-sue-missing · dinosaur-universe · galaxy-studio · toy-kingdom · mukkuri-hangwa · petnow-app · petnow-service · chaegeun · idea · salay-moon · piper · saju · hateful-dream · heupyeonja
+petnow-brand · max-nose-id · is-sue-missing · dinosaur-universe · galaxy-studio · toy-kingdom · mukkuri-hangwa · petnow-app · petnow-service · chaegeun · home-purrtect · idea · salay-moon · piper · saju · hateful-dream · heupyeonja
 
 > 파일 확장자는 `.jpg` 기준이에요. `.png`를 쓰고 싶으면 알려주세요(코드에서 같이 잡아줄게요). `preview`는 움짤이라 `.gif`.
 
