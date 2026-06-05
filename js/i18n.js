@@ -67,6 +67,22 @@
   /* ---- 프로젝트 영어 콘텐츠 (slug → {concept, overview[], sections[]}) ----
      없는 항목/필드는 자동으로 한국어로 폴백됩니다. 채워가는 중. */
   window.PROJECTS_EN = {
+    "home-purrtect": {
+      concept: "A 1930s cartoon-style (Cuphead-tone) side-scrolling action-defense game where cat sheriff ‘Cheese’ guards a mansion — a solo indie project.",
+      overview: [
+        "‘Home Purrtect’ is a 1930s cartoon-style (Cuphead-tone) side-scrolling action-defense game in which cat sheriff ‘Cheese’ fends off the rats invading a mansion. Built in landscape, 2D, on Godot 4.6, the world, characters, backgrounds, UI, and staging are all designed and developed solo, as an indie.",
+        "It’s also an experiment in making a game as a graphic designer with almost no coding background — pairing with generative AI as a development partner, splitting the work into planning (design and balancing) and implementation (code and verification). I defined a unified design system of thick ink outlines and a vintage cream/gold/red palette, and released a playable Act 1 as a web build that I keep updating.",
+      ],
+      sections: [
+        { type: "process", title: "How it’s made — Designer × AI pair development", steps: [
+          { step: "01 WORLD", title: "World · Characters", body: "Designed Act 1’s world, characters, and catalog myself — cat sheriff ‘Cheese,’ the mansion, and the rat ‘intruders.’" },
+          { step: "02 ART", title: "Art & Design System", body: "Drew the 1930s cartoon-tone characters, backgrounds, and UI by hand, and defined design tokens for ink outlines and a cream/gold/red palette." },
+          { step: "03 BUILD", title: "AI pair development", body: "A two-track collaboration splitting planning (design and balancing) from implementation (GDScript and verification), letting a non-developer build a game that actually runs." },
+          { step: "04 SHIP", title: "Web deploy · Live ops", body: "Auto-deploys the Godot web build via GitHub Actions, shipping a playable Act 1 and updating it continuously." },
+        ]},
+        { type: "quote", text: "Can a designer — without knowing how to code — build a ‘world you can play’? The game started from that question." },
+      ],
+    },
     "toy-kingdom": {
       concept: "Rewriting old folktales into lessons for 21st-century kids — a branded puppet-theater series for a toy store.",
       overview: [

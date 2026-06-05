@@ -273,6 +273,37 @@ const PROJECTS = [
 
   /* ---------------- Creative Experiments ---------------- */
   {
+    slug: "home-purrtect", titleEn: "Home Purrtect", titleKo: "홈 퍼르텍트",
+    category: "experiments", tags: ["Game", "Illustration", "World-building", "AI"],
+    date: "2026-06", period: "2025 – 현재 (개발 중)", color: "coral", featured: true,
+    concept: "고양이 보안관 ‘치즈’가 저택을 지키는 1930년대 카툰풍(컵헤드 톤) 횡스크롤 액션 디펜스 게임 ─ 1인 인디.",
+    role: ["Game Design", "Art Direction", "Character & World", "UI/UX", "Development (AI-paired)"],
+    tools: ["Godot 4.6", "GDScript", "Photoshop", "Illustrator", "Claude", "ChatGPT"],
+    client: "개인 프로젝트 · 1인 인디 게임", year: "2025–",
+    link: { url: "https://orylo.github.io/home-purrtect/", label: "지금 플레이 ▶" },
+    thumb: "assets/work/home-purrtect/thumb.jpg",
+    preview: "assets/work/home-purrtect/thumb.jpg",
+    hero: "assets/work/home-purrtect/hero.jpg",
+    gallery: [
+      "assets/work/home-purrtect/stage1.jpg",
+      "assets/work/home-purrtect/interior.png",
+      "assets/work/home-purrtect/map.png",
+    ],
+    overview: [
+      "‘홈 퍼르텍트(Home Purrtect)’는 고양이 보안관 ‘치즈’가 저택에 침입하는 쥐 떼를 막아내는 1930년대 카툰풍(컵헤드 톤) 횡스크롤 액션 디펜스 게임입니다. 가로 모드·2D·Godot 4.6 기반으로, 세계관·캐릭터·배경·UI·연출까지 1인 인디로 직접 디자인하고 개발하고 있습니다.",
+      "코딩 경험이 거의 없는 그래픽 디자이너가 생성형 AI를 페어 개발 파트너로 삼아, 기획(설계·밸런싱)과 구현(코드·검증)을 분리한 협업 구조로 게임을 만들어가는 실험이기도 합니다. 두꺼운 잉크 외곽선과 크림·골든·빨강의 빈티지 팔레트로 통일된 디자인 시스템을 정의하고, 1막을 플레이 가능한 웹 빌드로 공개해 계속 업데이트하고 있습니다.",
+    ],
+    sections: [
+      { type: "process", title: "제작 방식 — 디자이너 × AI 페어 개발", steps: [
+        { step: "01 WORLD", title: "세계관 · 캐릭터", body: "고양이 보안관 ‘치즈’와 저택, 침입자(쥐) 등 1막의 세계관·캐릭터·도감을 직접 설계했습니다." },
+        { step: "02 ART", title: "아트 & 디자인 시스템", body: "1930년대 카툰 톤의 캐릭터·배경·UI를 직접 그리고, 잉크 외곽선·크림/골든/빨강 팔레트의 디자인 토큰을 정의했습니다." },
+        { step: "03 BUILD", title: "AI 페어 개발", body: "기획(설계·밸런싱)과 구현(GDScript·검증)을 분리한 두 갈래 협업으로, 비개발자가 실제로 ‘돌아가는’ 게임을 구현했습니다." },
+        { step: "04 SHIP", title: "웹 배포 · 운영", body: "GitHub Actions로 Godot 웹 빌드를 자동 배포해, 플레이 가능한 1막을 공개하고 지속적으로 업데이트하고 있습니다." },
+      ]},
+      { type: "quote", text: "코드를 몰라도, 디자이너가 ‘플레이되는 세계’를 만들 수 있을까 ─ 그 질문에서 시작한 게임." },
+    ],
+  },
+  {
     slug: "idea", titleEn: "IDEÁ", titleKo: "IDEÁ",
     category: "experiments", tags: ["AI", "Branding", "Packaging"],
     date: "2025-05", period: "2025.05", color: "navy", featured: false,
