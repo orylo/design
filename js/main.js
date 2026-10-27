@@ -201,7 +201,7 @@
       return;
     }
 
-    document.title = p.titleEn + " — orylo";
+    document.title = p.titleEn + " — leesunghee";
 
     // 특정 프로젝트는 흰 배경으로
     if (p.slug === "chaegeun" || p.slug === "mukkuri-hangwa" || p.slug === "joseon-hats") {
@@ -280,7 +280,10 @@
         '<p class="subhead" style="margin-top:16px;max-width:60ch">' + esc(fld(p, "concept") || "") + "</p>" +
       "</div>" +
 
-      '<div class="detail-hero img-ph"><img class="detail-hero__img" src="' + esc(heroSrc) + '" alt="" onerror="this.parentNode.remove()"></div>' +
+      // 영상 작업은 맨 위에 소리 없이 반복되는 영상, 나머지는 그림
+      (p.heroVideo
+        ? '<div class="detail-hero img-ph"><video class="detail-hero__img" src="' + esc(p.heroVideo) + '" poster="' + esc(heroSrc) + '" autoplay muted loop playsinline preload="auto"></video></div>'
+        : '<div class="detail-hero img-ph"><img class="detail-hero__img" src="' + esc(heroSrc) + '" alt="" onerror="this.parentNode.remove()"></div>') +
 
       '<div class="container">' +
         '<div class="detail-meta">' +

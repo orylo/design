@@ -38,7 +38,7 @@ const PROJECTS = [
     "date": "2025-10",
     "period": "2022.09 – 2025.10",
     "color": "lime",
-    "featured": false,
+    "featured": true,
     "concept": "기술이 아닌 ‘잃어버렸을 때의 감정’에서 출발한 펫테크 브랜드 시스템.",
     "role": [
       "Brand Strategy",
@@ -213,7 +213,8 @@ const PROJECTS = [
     "thumb": "assets/work/max-nose-id/thumb.jpg",
     "gallery": [],
     "hero": "assets/work/max-nose-id/hero.jpg",
-    "previewVideo": "assets/work/max-nose-id/preview.mp4"
+    "previewVideo": "assets/work/max-nose-id/preview.mp4",
+    "heroVideo": "assets/work/max-nose-id/hero.mp4"
   },
   {
     "slug": "is-sue-missing",
@@ -282,7 +283,8 @@ const PROJECTS = [
     ],
     "gallery": [],
     "hero": "assets/work/is-sue-missing/hero.jpg",
-    "previewVideo": "assets/work/is-sue-missing/preview.mp4"
+    "previewVideo": "assets/work/is-sue-missing/preview.mp4",
+    "heroVideo": "assets/work/is-sue-missing/hero.mp4"
   },
   {
     "slug": "dinosaur-universe",
@@ -317,7 +319,7 @@ const PROJECTS = [
     "date": "2022-08",
     "period": "2022",
     "color": "navy",
-    "featured": false,
+    "featured": true,
     "concept": "여덟 가지 성향으로 ‘나만의 폴더블’을 찾다 — 퍼스널라이징 경험 시스템.",
     "role": [
       "Experience Content Design",
@@ -503,7 +505,7 @@ const PROJECTS = [
     "date": "2021-07",
     "period": "2021.02 – 2021.07",
     "color": "pink",
-    "featured": true,
+    "featured": false,
     "concept": "시대에 맞지 않는 옛이야기를, 21세기 아이들을 위한 새 교훈으로 — 장난감 인형극 브랜디드 콘텐츠.",
     "role": [
       "Contents Design",
@@ -640,7 +642,7 @@ const PROJECTS = [
     "date": "2020-12",
     "period": "2020.02 – 2021.02",
     "color": "coral",
-    "featured": true,
+    "featured": false,
     "concept": "Amass a Mass of Sweet Fortune — 점괘를 품은 한과로 즐기는, 가벼운 무꾸리.",
     "role": [
       "Brand Strategy",
@@ -801,7 +803,7 @@ const PROJECTS = [
     "date": "2025-09",
     "period": "2022.09 – 2025",
     "color": "lime",
-    "featured": false,
+    "featured": true,
     "concept": "기술에 대한 거리감을 줄이는, 직관적이고 신뢰감 있는 앱 인터페이스.",
     "role": [
       "Product Design",
@@ -978,7 +980,7 @@ const PROJECTS = [
     "date": "2021-02",
     "period": "2020.02 – 2021.02",
     "color": "lime",
-    "featured": true,
+    "featured": false,
     "concept": "채식 라이프스타일, 차근차근 해볼까요 — 지속 가능한 지구를 위한 채소 구독 서비스.",
     "role": [
       "Service Design",
@@ -1164,7 +1166,7 @@ const PROJECTS = [
     "date": "2026-06",
     "period": "2026.06 – 개발 중",
     "color": "pink",
-    "featured": false,
+    "featured": true,
     "concept": "대학 4년, 80주를 혼자 AI 팀과 함께 만든다",
     "role": [
       "기획 · UI/UX · 아트 디렉션 · AI 제작 파이프라인 · Godot 구현 (1인)"
@@ -1267,7 +1269,8 @@ const PROJECTS = [
       "label": "Watch PV"
     },
     "thumb": "assets/work/major-in-love/thumb.jpg",
-    "previewVideo": "assets/work/major-in-love/preview.mp4"
+    "previewVideo": "assets/work/major-in-love/preview.mp4",
+    "heroVideo": "assets/work/major-in-love/hero.mp4"
   },
   {
     "slug": "idea",
@@ -1621,7 +1624,8 @@ const PROJECTS = [
     ],
     "gallery": [],
     "hero": "assets/work/hateful-dream/hero.jpg",
-    "previewVideo": "assets/work/hateful-dream/preview.mp4"
+    "previewVideo": "assets/work/hateful-dream/preview.mp4",
+    "heroVideo": "assets/work/hateful-dream/hero.mp4"
   },
   {
     "slug": "digital-ghost",
@@ -1725,7 +1729,8 @@ const PROJECTS = [
       "label": "Watch film"
     },
     "thumb": "assets/work/digital-ghost/thumb.jpg",
-    "previewVideo": "assets/work/digital-ghost/preview.mp4"
+    "previewVideo": "assets/work/digital-ghost/preview.mp4",
+    "heroVideo": "assets/work/digital-ghost/hero.mp4"
   },
   {
     "slug": "joseon-hats",
@@ -1908,7 +1913,7 @@ const PROJECTS = [
     "date": "2020-03",
     "period": "2019 – 2020.03",
     "color": "cream",
-    "featured": true,
+    "featured": false,
     "concept": "혈연·지연·학연, 그리고 흡연 — 담배로 맺어지는 인연을 담은 독립 인터뷰 잡지.",
     "role": [
       "Editorial Design",
