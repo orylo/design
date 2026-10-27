@@ -510,8 +510,8 @@ const PROJECTS = [
   },
   {
     "slug": "azar-tools",
-    "titleKo": "Azar Creative Tools",
-    "titleEn": "Azar Creative Tools",
+    "titleKo": "Azar — Creative Tools",
+    "titleEn": "Azar — Creative Tools",
     "category": "product",
     "date": "2026-01",
     "color": "navy",
