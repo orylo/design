@@ -1140,8 +1140,8 @@ const PROJECTS = [
   },
   {
     "slug": "digital-ghost",
-    "titleEn": "디지털 고스트",
-    "titleKo": "디지털 고스트",
+    "titleEn": "Digital Ghost",
+    "titleKo": "Digital Ghost",
     "category": "experiments",
     "tags": [
       "AI",
