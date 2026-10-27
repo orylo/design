@@ -62,43 +62,31 @@ const PROJECTS = [
     "sections": [
       {
         "type": "text",
-        "title": "오렌지 클로버와 강아지 — 리브랜딩 키 비주얼",
-        "body": []
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/petnow-brand/f01.jpg"
-        ]
-      },
-      {
-        "type": "text",
         "title": "기술이 아니라, 잃어버렸을 때의 감정에서 출발하다",
         "body": []
       },
       {
         "type": "images",
         "images": [
+          "assets/work/petnow-brand/f01.jpg",
           "assets/work/petnow-brand/f02.jpg",
           "assets/work/petnow-brand/f03.jpg",
-          "assets/work/petnow-brand/f04.jpg",
-          "assets/work/petnow-brand/f05.jpg"
+          "assets/work/petnow-brand/f04.jpg"
         ]
       },
       {
-        "type": "text",
+        "type": "carousel",
         "title": "BI를 등록증·외장칩·인식표까지 잇다",
-        "body": []
-      },
-      {
-        "type": "images",
+        "body": "",
         "images": [
+          "assets/work/petnow-brand/f05.jpg",
           "assets/work/petnow-brand/f06.jpg",
           "assets/work/petnow-brand/f07.jpg",
           "assets/work/petnow-brand/f08.jpg",
-          "assets/work/petnow-brand/f09.jpg",
-          "assets/work/petnow-brand/f10.jpg"
-        ]
+          "assets/work/petnow-brand/f09.jpg"
+        ],
+        "aspect": "2400/2154",
+        "per": 2.2
       },
       {
         "type": "text",
@@ -108,24 +96,25 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-brand/f11.jpg"
+          "assets/work/petnow-brand/f10.jpg"
         ]
       },
       {
-        "type": "text",
+        "type": "carousel",
         "title": "프롬프트를 4레이어로 나눠, 팀이 같은 톤의 소재를 만들게 하다",
-        "body": []
-      },
-      {
-        "type": "images",
+        "body": "",
         "images": [
+          "assets/work/petnow-brand/f11.jpg",
           "assets/work/petnow-brand/f12.jpg",
           "assets/work/petnow-brand/f13.jpg",
           "assets/work/petnow-brand/f14.jpg",
           "assets/work/petnow-brand/f15.jpg",
           "assets/work/petnow-brand/f16.jpg",
-          "assets/work/petnow-brand/f17.jpg"
-        ]
+          "assets/work/petnow-brand/f17.jpg",
+          "assets/work/petnow-brand/f18.jpg"
+        ],
+        "aspect": "1020/1020",
+        "per": 2.2
       }
     ],
     "gallery": [],
@@ -196,18 +185,17 @@ const PROJECTS = [
         ]
       },
       {
-        "type": "text",
-        "title": "Meet Max and His ID — 강아지의 시점으로 말을 걸다",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "장면",
+        "body": "",
         "images": [
           "assets/work/max-nose-id/f01.jpg",
           "assets/work/max-nose-id/f02.jpg",
           "assets/work/max-nose-id/f03.jpg",
           "assets/work/max-nose-id/f04.jpg"
-        ]
+        ],
+        "aspect": "2000/1122",
+        "per": 1.1
       }
     ],
     "thumb": "assets/work/max-nose-id/thumb.jpg",
@@ -255,30 +243,19 @@ const PROJECTS = [
     "thumb": "assets/work/is-sue-missing/thumb.jpg",
     "sections": [
       {
-        "type": "text",
-        "title": "〈Is Sue Missing?〉 — 장면으로 보는 캠페인 영상",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "장면",
+        "body": "",
         "images": [
           "assets/work/is-sue-missing/f01.jpg",
           "assets/work/is-sue-missing/f02.jpg",
-          "assets/work/is-sue-missing/f03.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "장면",
-        "body": []
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/is-sue-missing/f03.jpg",
           "assets/work/is-sue-missing/f04.jpg",
           "assets/work/is-sue-missing/f05.jpg",
           "assets/work/is-sue-missing/f06.jpg"
-        ]
+        ],
+        "aspect": "2000/1120",
+        "per": 1.1
       }
     ],
     "gallery": [],
@@ -359,6 +336,18 @@ const PROJECTS = [
         ]
       },
       {
+        "type": "carousel",
+        "title": "체험 키트",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-fold4/f06.jpg",
+          "assets/work/galaxy-studio-fold4/f07.jpg",
+          "assets/work/galaxy-studio-fold4/f08.jpg"
+        ],
+        "aspect": "1088/736",
+        "per": 1.6
+      },
+      {
         "type": "text",
         "title": "설명서 대신 빙고판으로 배우는 Z 폴드4",
         "body": []
@@ -366,7 +355,7 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/galaxy-studio-fold4/f06.jpg"
+          "assets/work/galaxy-studio-fold4/f09.jpg"
         ]
       }
     ],
@@ -410,17 +399,30 @@ const PROJECTS = [
     "thumb": "assets/work/galaxy-studio-s22/thumb.jpg",
     "sections": [
       {
+        "type": "carousel",
+        "title": "체험 키트 7종",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-s22/f01.jpg",
+          "assets/work/galaxy-studio-s22/f02.jpg",
+          "assets/work/galaxy-studio-s22/f03.jpg",
+          "assets/work/galaxy-studio-s22/f04.jpg",
+          "assets/work/galaxy-studio-s22/f05.jpg",
+          "assets/work/galaxy-studio-s22/f06.jpg"
+        ],
+        "aspect": "1026/736",
+        "per": 1.6
+      },
+      {
         "type": "text",
-        "title": "체험에서 경험으로, 전시장에서 ‘내 일상’을 겪게 하다",
+        "title": "전시장",
         "body": []
       },
       {
         "type": "images",
         "images": [
-          "assets/work/galaxy-studio-s22/f01.jpg",
-          "assets/work/galaxy-studio-s22/f02.jpg",
-          "assets/work/galaxy-studio-s22/f03.jpg",
-          "assets/work/galaxy-studio-s22/f04.jpg"
+          "assets/work/galaxy-studio-s22/f07.jpg",
+          "assets/work/galaxy-studio-s22/f08.jpg"
         ]
       }
     ],
@@ -477,15 +479,39 @@ const PROJECTS = [
         ]
       },
       {
+        "type": "carousel",
+        "title": "성향별 체험 키트",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f05.jpg",
+          "assets/work/galaxy-studio-fold3/f06.jpg",
+          "assets/work/galaxy-studio-fold3/f07.jpg"
+        ],
+        "aspect": "822/736",
+        "per": 1.6
+      },
+      {
         "type": "text",
-        "title": "무인 체험 앱, 홈 화면에서 스튜디오 방문 유도까지",
+        "title": "무인 체험 앱",
         "body": []
       },
       {
         "type": "images",
         "images": [
-          "assets/work/galaxy-studio-fold3/f05.jpg"
+          "assets/work/galaxy-studio-fold3/f08.jpg"
         ]
+      },
+      {
+        "type": "carousel",
+        "title": "웹 이벤트",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f09.jpg",
+          "assets/work/galaxy-studio-fold3/f10.jpg",
+          "assets/work/galaxy-studio-fold3/f11.jpg"
+        ],
+        "aspect": "1000/871",
+        "per": 2.2
       }
     ],
     "gallery": [],
@@ -555,60 +581,38 @@ const PROJECTS = [
         "text": "“2021년의 장난감 가게라면, 2021년식의 교훈을 아이들에게 줘야 한다.” — 아이와 어른 모두에게 현대적인 교훈을 들려주는 공간을 지향했습니다."
       },
       {
-        "type": "text",
-        "title": "장난감 가게가 ‘지금 시대의 교훈’을 건네는 인형극",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "한 편을 넘겨 보기 — 인어공주",
+        "body": "인스타그램에 올린 그대로, 한 편이 넘어가는 순서입니다.",
         "images": [
           "assets/work/toy-kingdom/f01.jpg",
           "assets/work/toy-kingdom/f02.jpg",
           "assets/work/toy-kingdom/f03.jpg",
-          "assets/work/toy-kingdom/f04.jpg"
-        ]
+          "assets/work/toy-kingdom/f04.jpg",
+          "assets/work/toy-kingdom/f05.jpg",
+          "assets/work/toy-kingdom/f06.jpg"
+        ],
+        "aspect": "1080/1080",
+        "per": 2.2
       },
       {
-        "type": "text",
-        "title": "직접 만든 32편",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "매주 두 편 — 시리즈 첫 장",
+        "body": "",
         "images": [
-          "assets/work/toy-kingdom/f05.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "한 편이 넘어가는 순서 — 무대, 장면, 출연 제품",
-        "body": []
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/toy-kingdom/f06.jpg",
           "assets/work/toy-kingdom/f07.jpg",
           "assets/work/toy-kingdom/f08.jpg",
           "assets/work/toy-kingdom/f09.jpg",
-          "assets/work/toy-kingdom/f10.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "개미와 배짱이부터 양치기 소년까지, 매주 두 편",
-        "body": []
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/toy-kingdom/f10.jpg",
           "assets/work/toy-kingdom/f11.jpg",
           "assets/work/toy-kingdom/f12.jpg",
           "assets/work/toy-kingdom/f13.jpg",
           "assets/work/toy-kingdom/f14.jpg",
           "assets/work/toy-kingdom/f15.jpg",
           "assets/work/toy-kingdom/f16.jpg"
-        ]
+        ],
+        "aspect": "1179/1179",
+        "per": 3.2
       },
       {
         "type": "text",
@@ -658,7 +662,6 @@ const PROJECTS = [
     "client": "SADI 졸업전시 · Brand Development Studio",
     "year": "2020–2021",
     "thumb": "assets/work/mukkuri-hangwa/thumb.jpg",
-    "preview": "https://www.sadi.net/ge/s4d1/img/uploads/02lsh015.gif",
     "hero": "https://www.sadi.net/ge/s4d1/img/uploads/02lsh001.jpg",
     "gallery": [
       "https://www.sadi.net/ge/s4d1/img/uploads/02lsh002.jpg",
@@ -685,7 +688,8 @@ const PROJECTS = [
         "type": "quote",
         "text": "“Amass a mass of sweet fortune.” 한과를 먹고 점괘를 발견하며, 달콤한 행운을 한가득 모아보세요."
       }
-    ]
+    ],
+    "previewVideo": "assets/work/mukkuri-hangwa/preview.mp4"
   },
   {
     "slug": "camel-coffee",
@@ -760,21 +764,18 @@ const PROJECTS = [
         ]
       },
       {
-        "type": "text",
+        "type": "carousel",
         "title": "‘태양’은 어디서나 뜬다 — 도시별 한정판 컵홀더",
-        "body": [
-          "해외 진출을 본격화하는 카멜커피에, 각 도시의 풍경과 컬러를 담은 컵홀더로 현지에 스며드는 방안을 제안했습니다. 앞서 제안한 시그니처 로고 하단의 ‘COFFEE’ 자리에 도시 이름을 넣고, 도시마다 다른 색 위에 손그림 스카이라인 일러스트를 얹었습니다. 서울·도쿄·상하이·LA·파리 5개 도시로 만들었고, 한정판으로 여행의 기억 속에 브랜드를 함께 남기자는 제안입니다. 여기에는 서울·도쿄·LA·파리 4곳의 그래픽과 서울 컵홀더 목업을 실었습니다."
-        ]
-      },
-      {
-        "type": "images",
+        "body": "",
         "images": [
           "assets/work/camel-coffee/09.jpg",
           "assets/work/camel-coffee/10.jpg",
           "assets/work/camel-coffee/11.jpg",
           "assets/work/camel-coffee/12.jpg",
           "assets/work/camel-coffee/13.jpg"
-        ]
+        ],
+        "aspect": "1025/797",
+        "per": 2.2
       }
     ],
     "gallery": [],
@@ -836,30 +837,30 @@ const PROJECTS = [
         ]
       },
       {
-        "type": "text",
-        "title": "처음 해보는 보호자도 한 번에 찍는 비문 스캔",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "비문 스캔",
+        "body": "",
         "images": [
           "assets/work/petnow-app/f03.jpg",
           "assets/work/petnow-app/f04.jpg",
-          "assets/work/petnow-app/f05.jpg"
-        ]
+          "assets/work/petnow-app/f05.jpg",
+          "assets/work/petnow-app/f06.jpg"
+        ],
+        "aspect": "780/1688",
+        "per": 3.2
       },
       {
-        "type": "text",
-        "title": "목격한 사람은 비문으로 바로 대조한다",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "목격 제보와 비문 매칭",
+        "body": "",
         "images": [
-          "assets/work/petnow-app/f06.jpg",
           "assets/work/petnow-app/f07.jpg",
-          "assets/work/petnow-app/f08.jpg"
-        ]
+          "assets/work/petnow-app/f08.jpg",
+          "assets/work/petnow-app/f09.jpg",
+          "assets/work/petnow-app/f10.jpg"
+        ],
+        "aspect": "780/1688",
+        "per": 3.2
       },
       {
         "type": "text",
@@ -869,7 +870,7 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-app/f09.jpg"
+          "assets/work/petnow-app/f11.jpg"
         ]
       },
       {
@@ -880,9 +881,9 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-app/f10.jpg",
-          "assets/work/petnow-app/f11.jpg",
-          "assets/work/petnow-app/f12.jpg"
+          "assets/work/petnow-app/f12.jpg",
+          "assets/work/petnow-app/f13.jpg",
+          "assets/work/petnow-app/f14.jpg"
         ]
       }
     ],
@@ -924,28 +925,18 @@ const PROJECTS = [
     "thumb": "assets/work/petnow-service/thumb.jpg",
     "sections": [
       {
-        "type": "text",
-        "title": "사람들은 잃으면, 전단지부터 만듭니다",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "실종 신고에서 전단지까지",
+        "body": "",
         "images": [
           "assets/work/petnow-service/f01.jpg",
           "assets/work/petnow-service/f02.jpg",
-          "assets/work/petnow-service/f03.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "한 번의 신고가 전단지와 제보로 이어지는 흐름",
-        "body": []
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/petnow-service/f04.jpg"
-        ]
+          "assets/work/petnow-service/f03.jpg",
+          "assets/work/petnow-service/f04.jpg",
+          "assets/work/petnow-service/f05.jpg"
+        ],
+        "aspect": "780/1688",
+        "per": 3.2
       },
       {
         "type": "text",
@@ -955,11 +946,11 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-service/f05.jpg",
           "assets/work/petnow-service/f06.jpg",
           "assets/work/petnow-service/f07.jpg",
           "assets/work/petnow-service/f08.jpg",
-          "assets/work/petnow-service/f09.jpg"
+          "assets/work/petnow-service/f09.jpg",
+          "assets/work/petnow-service/f10.jpg"
         ]
       }
     ],
@@ -996,8 +987,6 @@ const PROJECTS = [
     "client": "SADI 졸업전시 · GUI Design Studio",
     "year": "2020–2021",
     "thumb": "assets/work/chaegeun/thumb.jpg",
-    "preview": "https://www.sadi.net/ge/s4d1/img/uploads/01lsh019.gif",
-    "previewVideo": "https://www.sadi.net/ge/s4d1/img/uploads/09lsh010.mp4",
     "hero": "https://www.sadi.net/ge/s4d1/img/uploads/01lsh001.jpg",
     "gallery": [
       "https://www.sadi.net/ge/s4d1/img/uploads/01lsh002.jpg",
@@ -1039,7 +1028,8 @@ const PROJECTS = [
         "type": "quote",
         "text": "채식 라이프스타일, 차근차근 해볼까요."
       }
-    ]
+    ],
+    "previewVideo": "assets/work/chaegeun/preview.mp4"
   },
   {
     "slug": "home-purrtect",
@@ -1191,14 +1181,9 @@ const PROJECTS = [
         "body": []
       },
       {
-        "type": "text",
+        "type": "carousel",
         "title": "게임 화면",
-        "body": [
-          "스토브 스토어에 올린 스크린샷입니다. 입학부터 전공 선택, 캠퍼스 만남, 축제, 폰 속 앱, 자취방까지 대학 4년의 흐름을 담았습니다."
-        ]
-      },
-      {
-        "type": "images",
+        "body": "스토브 스토어에 올린 스크린샷입니다. 입학부터 전공 선택, 캠퍼스 만남, 축제, 폰 속 앱, 자취방까지 대학 4년의 흐름을 담았습니다.",
         "images": [
           "assets/work/major-in-love/01.jpg",
           "assets/work/major-in-love/02.jpg",
@@ -1215,7 +1200,9 @@ const PROJECTS = [
           "assets/work/major-in-love/13.jpg",
           "assets/work/major-in-love/14.jpg",
           "assets/work/major-in-love/15.jpg"
-        ]
+        ],
+        "aspect": "1920/1080",
+        "per": 1.1
       },
       {
         "type": "text",
@@ -1335,12 +1322,9 @@ const PROJECTS = [
         ]
       },
       {
-        "type": "text",
+        "type": "carousel",
         "title": "문대리의 하루 — 툰 23편",
-        "body": []
-      },
-      {
-        "type": "images",
+        "body": "인스타그램에 연재한 순서대로 넘겨 보실 수 있습니다.",
         "images": [
           "assets/work/salay-moon/f04.jpg",
           "assets/work/salay-moon/f05.jpg",
@@ -1353,8 +1337,19 @@ const PROJECTS = [
           "assets/work/salay-moon/f12.jpg",
           "assets/work/salay-moon/f13.jpg",
           "assets/work/salay-moon/f14.jpg",
-          "assets/work/salay-moon/f15.jpg"
-        ]
+          "assets/work/salay-moon/f15.jpg",
+          "assets/work/salay-moon/f16.jpg",
+          "assets/work/salay-moon/f17.jpg",
+          "assets/work/salay-moon/f18.jpg",
+          "assets/work/salay-moon/f19.jpg",
+          "assets/work/salay-moon/f20.jpg",
+          "assets/work/salay-moon/f21.jpg",
+          "assets/work/salay-moon/f22.jpg",
+          "assets/work/salay-moon/f23.jpg",
+          "assets/work/salay-moon/f24.jpg"
+        ],
+        "aspect": "1080/1080",
+        "per": 2.2
       }
     ],
     "gallery": [],
@@ -1442,12 +1437,9 @@ const PROJECTS = [
         ]
       },
       {
-        "type": "text",
-        "title": "2–4장 — 붉은 길에서 밤거리 공연으로",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "스토리북 — 2~4장",
+        "body": "",
         "images": [
           "assets/work/piper/f04.jpg",
           "assets/work/piper/f05.jpg",
@@ -1455,7 +1447,9 @@ const PROJECTS = [
           "assets/work/piper/f07.jpg",
           "assets/work/piper/f08.jpg",
           "assets/work/piper/f09.jpg"
-        ]
+        ],
+        "aspect": "2400/1308",
+        "per": 1.1
       },
       {
         "type": "text",
@@ -1535,6 +1529,25 @@ const PROJECTS = [
           "assets/work/saju/f01.jpg",
           "assets/work/saju/f02.jpg"
         ]
+      },
+      {
+        "type": "carousel",
+        "title": "운세 카드",
+        "body": "",
+        "images": [
+          "assets/work/saju/f03.jpg",
+          "assets/work/saju/f04.jpg",
+          "assets/work/saju/f05.jpg",
+          "assets/work/saju/f06.jpg",
+          "assets/work/saju/f07.jpg",
+          "assets/work/saju/f08.jpg",
+          "assets/work/saju/f09.jpg",
+          "assets/work/saju/f10.jpg",
+          "assets/work/saju/f11.jpg",
+          "assets/work/saju/f12.jpg"
+        ],
+        "aspect": "600/1000",
+        "per": 4.2
       }
     ],
     "thumb": "assets/work/saju/thumb.jpg",
@@ -1594,32 +1607,29 @@ const PROJECTS = [
         ]
       },
       {
-        "type": "text",
-        "title": "처음 와봤지만 익숙한 숲에서, 꿈에 먹히기까지",
-        "body": []
-      },
-      {
-        "type": "images",
+        "type": "carousel",
+        "title": "장면",
+        "body": "",
         "images": [
           "assets/work/hateful-dream/f03.jpg",
           "assets/work/hateful-dream/f04.jpg",
           "assets/work/hateful-dream/f05.jpg",
-          "assets/work/hateful-dream/f06.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "붉은 빛이 번지는 숲의 장면들",
-        "body": []
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/hateful-dream/f06.jpg",
           "assets/work/hateful-dream/f07.jpg",
           "assets/work/hateful-dream/f08.jpg",
           "assets/work/hateful-dream/f09.jpg",
-          "assets/work/hateful-dream/f10.jpg"
-        ]
+          "assets/work/hateful-dream/f10.jpg",
+          "assets/work/hateful-dream/f11.jpg",
+          "assets/work/hateful-dream/f12.jpg",
+          "assets/work/hateful-dream/f13.jpg",
+          "assets/work/hateful-dream/f14.jpg",
+          "assets/work/hateful-dream/f15.jpg",
+          "assets/work/hateful-dream/f16.jpg",
+          "assets/work/hateful-dream/f17.jpg",
+          "assets/work/hateful-dream/f18.jpg"
+        ],
+        "aspect": "1280/556",
+        "per": 1.1
       }
     ],
     "gallery": [],
@@ -1675,6 +1685,27 @@ const PROJECTS = [
         ]
       },
       {
+        "type": "carousel",
+        "title": "키프레임",
+        "body": "",
+        "images": [
+          "assets/work/digital-ghost/02.jpg",
+          "assets/work/digital-ghost/03.jpg",
+          "assets/work/digital-ghost/04.jpg",
+          "assets/work/digital-ghost/05.jpg",
+          "assets/work/digital-ghost/06.jpg",
+          "assets/work/digital-ghost/07.jpg",
+          "assets/work/digital-ghost/08.jpg",
+          "assets/work/digital-ghost/09.jpg",
+          "assets/work/digital-ghost/10.jpg",
+          "assets/work/digital-ghost/11.jpg",
+          "assets/work/digital-ghost/12.jpg",
+          "assets/work/digital-ghost/13.jpg"
+        ],
+        "aspect": "1280/720",
+        "per": 1.1
+      },
+      {
         "type": "text",
         "title": "1화 ‘장산범의 보이스 피싱’ — 익숙한 목소리가 문을 엽니다",
         "body": [
@@ -1684,10 +1715,10 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/digital-ghost/02.jpg",
-          "assets/work/digital-ghost/03.jpg",
-          "assets/work/digital-ghost/04.jpg",
-          "assets/work/digital-ghost/05.jpg"
+          "assets/work/digital-ghost/14.jpg",
+          "assets/work/digital-ghost/15.jpg",
+          "assets/work/digital-ghost/16.jpg",
+          "assets/work/digital-ghost/17.jpg"
         ]
       },
       {
@@ -1700,11 +1731,11 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/digital-ghost/06.jpg",
-          "assets/work/digital-ghost/07.jpg",
-          "assets/work/digital-ghost/08.jpg",
-          "assets/work/digital-ghost/09.jpg",
-          "assets/work/digital-ghost/10.jpg"
+          "assets/work/digital-ghost/18.jpg",
+          "assets/work/digital-ghost/19.jpg",
+          "assets/work/digital-ghost/20.jpg",
+          "assets/work/digital-ghost/21.jpg",
+          "assets/work/digital-ghost/22.jpg"
         ]
       },
       {
@@ -1717,9 +1748,9 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/digital-ghost/11.jpg",
-          "assets/work/digital-ghost/12.jpg",
-          "assets/work/digital-ghost/13.jpg"
+          "assets/work/digital-ghost/23.jpg",
+          "assets/work/digital-ghost/24.jpg",
+          "assets/work/digital-ghost/25.jpg"
         ]
       }
     ],
@@ -2083,44 +2114,48 @@ window.PROJECTS_EN = {
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-brand/f01.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/petnow-brand/f01.jpg",
           "assets/work/petnow-brand/f02.jpg",
           "assets/work/petnow-brand/f03.jpg",
-          "assets/work/petnow-brand/f04.jpg",
-          "assets/work/petnow-brand/f05.jpg"
+          "assets/work/petnow-brand/f04.jpg"
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
+          "assets/work/petnow-brand/f05.jpg",
           "assets/work/petnow-brand/f06.jpg",
           "assets/work/petnow-brand/f07.jpg",
           "assets/work/petnow-brand/f08.jpg",
-          "assets/work/petnow-brand/f09.jpg",
+          "assets/work/petnow-brand/f09.jpg"
+        ],
+        "aspect": "2400/2154",
+        "per": 2.2
+      },
+      {
+        "type": "images",
+        "images": [
           "assets/work/petnow-brand/f10.jpg"
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
-          "assets/work/petnow-brand/f11.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/petnow-brand/f11.jpg",
           "assets/work/petnow-brand/f12.jpg",
           "assets/work/petnow-brand/f13.jpg",
           "assets/work/petnow-brand/f14.jpg",
           "assets/work/petnow-brand/f15.jpg",
           "assets/work/petnow-brand/f16.jpg",
-          "assets/work/petnow-brand/f17.jpg"
-        ]
+          "assets/work/petnow-brand/f17.jpg",
+          "assets/work/petnow-brand/f18.jpg"
+        ],
+        "aspect": "1020/1020",
+        "per": 2.2
       }
     ]
   },
@@ -2158,13 +2193,17 @@ window.PROJECTS_EN = {
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/max-nose-id/f01.jpg",
           "assets/work/max-nose-id/f02.jpg",
           "assets/work/max-nose-id/f03.jpg",
           "assets/work/max-nose-id/f04.jpg"
-        ]
+        ],
+        "aspect": "2000/1122",
+        "per": 1.1
       }
     ]
   },
@@ -2176,20 +2215,19 @@ window.PROJECTS_EN = {
     ],
     "sections": [
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/is-sue-missing/f01.jpg",
           "assets/work/is-sue-missing/f02.jpg",
-          "assets/work/is-sue-missing/f03.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/is-sue-missing/f03.jpg",
           "assets/work/is-sue-missing/f04.jpg",
           "assets/work/is-sue-missing/f05.jpg",
           "assets/work/is-sue-missing/f06.jpg"
-        ]
+        ],
+        "aspect": "2000/1120",
+        "per": 1.1
       }
     ]
   },
@@ -2215,9 +2253,21 @@ window.PROJECTS_EN = {
         ]
       },
       {
+        "type": "carousel",
+        "title": "",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-fold4/f06.jpg",
+          "assets/work/galaxy-studio-fold4/f07.jpg",
+          "assets/work/galaxy-studio-fold4/f08.jpg"
+        ],
+        "aspect": "1088/736",
+        "per": 1.6
+      },
+      {
         "type": "images",
         "images": [
-          "assets/work/galaxy-studio-fold4/f06.jpg"
+          "assets/work/galaxy-studio-fold4/f09.jpg"
         ]
       }
     ]
@@ -2230,12 +2280,25 @@ window.PROJECTS_EN = {
     ],
     "sections": [
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/galaxy-studio-s22/f01.jpg",
           "assets/work/galaxy-studio-s22/f02.jpg",
           "assets/work/galaxy-studio-s22/f03.jpg",
-          "assets/work/galaxy-studio-s22/f04.jpg"
+          "assets/work/galaxy-studio-s22/f04.jpg",
+          "assets/work/galaxy-studio-s22/f05.jpg",
+          "assets/work/galaxy-studio-s22/f06.jpg"
+        ],
+        "aspect": "1026/736",
+        "per": 1.6
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-s22/f07.jpg",
+          "assets/work/galaxy-studio-s22/f08.jpg"
         ]
       }
     ]
@@ -2257,10 +2320,34 @@ window.PROJECTS_EN = {
         ]
       },
       {
+        "type": "carousel",
+        "title": "",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f05.jpg",
+          "assets/work/galaxy-studio-fold3/f06.jpg",
+          "assets/work/galaxy-studio-fold3/f07.jpg"
+        ],
+        "aspect": "822/736",
+        "per": 1.6
+      },
+      {
         "type": "images",
         "images": [
-          "assets/work/galaxy-studio-fold3/f05.jpg"
+          "assets/work/galaxy-studio-fold3/f08.jpg"
         ]
+      },
+      {
+        "type": "carousel",
+        "title": "",
+        "body": "",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f09.jpg",
+          "assets/work/galaxy-studio-fold3/f10.jpg",
+          "assets/work/galaxy-studio-fold3/f11.jpg"
+        ],
+        "aspect": "1000/871",
+        "per": 2.2
       }
     ]
   },
@@ -2297,40 +2384,38 @@ window.PROJECTS_EN = {
         "text": "“A toy store in 2021 should hand kids a 2021 lesson.” — a space that tells modern morals to children and adults alike."
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/toy-kingdom/f01.jpg",
           "assets/work/toy-kingdom/f02.jpg",
           "assets/work/toy-kingdom/f03.jpg",
-          "assets/work/toy-kingdom/f04.jpg"
-        ]
+          "assets/work/toy-kingdom/f04.jpg",
+          "assets/work/toy-kingdom/f05.jpg",
+          "assets/work/toy-kingdom/f06.jpg"
+        ],
+        "aspect": "1080/1080",
+        "per": 2.2
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
-          "assets/work/toy-kingdom/f05.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/toy-kingdom/f06.jpg",
           "assets/work/toy-kingdom/f07.jpg",
           "assets/work/toy-kingdom/f08.jpg",
           "assets/work/toy-kingdom/f09.jpg",
-          "assets/work/toy-kingdom/f10.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/toy-kingdom/f10.jpg",
           "assets/work/toy-kingdom/f11.jpg",
           "assets/work/toy-kingdom/f12.jpg",
           "assets/work/toy-kingdom/f13.jpg",
           "assets/work/toy-kingdom/f14.jpg",
           "assets/work/toy-kingdom/f15.jpg",
           "assets/work/toy-kingdom/f16.jpg"
-        ]
+        ],
+        "aspect": "1179/1179",
+        "per": 3.2
       },
       {
         "type": "images",
@@ -2371,33 +2456,43 @@ window.PROJECTS_EN = {
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/petnow-app/f03.jpg",
           "assets/work/petnow-app/f04.jpg",
-          "assets/work/petnow-app/f05.jpg"
-        ]
+          "assets/work/petnow-app/f05.jpg",
+          "assets/work/petnow-app/f06.jpg"
+        ],
+        "aspect": "780/1688",
+        "per": 3.2
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
-          "assets/work/petnow-app/f06.jpg",
           "assets/work/petnow-app/f07.jpg",
-          "assets/work/petnow-app/f08.jpg"
+          "assets/work/petnow-app/f08.jpg",
+          "assets/work/petnow-app/f09.jpg",
+          "assets/work/petnow-app/f10.jpg"
+        ],
+        "aspect": "780/1688",
+        "per": 3.2
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f11.jpg"
         ]
       },
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-app/f09.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/petnow-app/f10.jpg",
-          "assets/work/petnow-app/f11.jpg",
-          "assets/work/petnow-app/f12.jpg"
+          "assets/work/petnow-app/f12.jpg",
+          "assets/work/petnow-app/f13.jpg",
+          "assets/work/petnow-app/f14.jpg"
         ]
       }
     ]
@@ -2410,27 +2505,27 @@ window.PROJECTS_EN = {
     ],
     "sections": [
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/petnow-service/f01.jpg",
           "assets/work/petnow-service/f02.jpg",
-          "assets/work/petnow-service/f03.jpg"
-        ]
+          "assets/work/petnow-service/f03.jpg",
+          "assets/work/petnow-service/f04.jpg",
+          "assets/work/petnow-service/f05.jpg"
+        ],
+        "aspect": "780/1688",
+        "per": 3.2
       },
       {
         "type": "images",
         "images": [
-          "assets/work/petnow-service/f04.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/petnow-service/f05.jpg",
           "assets/work/petnow-service/f06.jpg",
           "assets/work/petnow-service/f07.jpg",
           "assets/work/petnow-service/f08.jpg",
-          "assets/work/petnow-service/f09.jpg"
+          "assets/work/petnow-service/f09.jpg",
+          "assets/work/petnow-service/f10.jpg"
         ]
       }
     ]
@@ -2464,7 +2559,9 @@ window.PROJECTS_EN = {
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/salay-moon/f04.jpg",
           "assets/work/salay-moon/f05.jpg",
@@ -2477,8 +2574,19 @@ window.PROJECTS_EN = {
           "assets/work/salay-moon/f12.jpg",
           "assets/work/salay-moon/f13.jpg",
           "assets/work/salay-moon/f14.jpg",
-          "assets/work/salay-moon/f15.jpg"
-        ]
+          "assets/work/salay-moon/f15.jpg",
+          "assets/work/salay-moon/f16.jpg",
+          "assets/work/salay-moon/f17.jpg",
+          "assets/work/salay-moon/f18.jpg",
+          "assets/work/salay-moon/f19.jpg",
+          "assets/work/salay-moon/f20.jpg",
+          "assets/work/salay-moon/f21.jpg",
+          "assets/work/salay-moon/f22.jpg",
+          "assets/work/salay-moon/f23.jpg",
+          "assets/work/salay-moon/f24.jpg"
+        ],
+        "aspect": "1080/1080",
+        "per": 2.2
       }
     ]
   },
@@ -2530,7 +2638,9 @@ window.PROJECTS_EN = {
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/piper/f04.jpg",
           "assets/work/piper/f05.jpg",
@@ -2538,7 +2648,9 @@ window.PROJECTS_EN = {
           "assets/work/piper/f07.jpg",
           "assets/work/piper/f08.jpg",
           "assets/work/piper/f09.jpg"
-        ]
+        ],
+        "aspect": "2400/1308",
+        "per": 1.1
       },
       {
         "type": "images",
@@ -2576,6 +2688,25 @@ window.PROJECTS_EN = {
           "assets/work/saju/f01.jpg",
           "assets/work/saju/f02.jpg"
         ]
+      },
+      {
+        "type": "carousel",
+        "title": "",
+        "body": "",
+        "images": [
+          "assets/work/saju/f03.jpg",
+          "assets/work/saju/f04.jpg",
+          "assets/work/saju/f05.jpg",
+          "assets/work/saju/f06.jpg",
+          "assets/work/saju/f07.jpg",
+          "assets/work/saju/f08.jpg",
+          "assets/work/saju/f09.jpg",
+          "assets/work/saju/f10.jpg",
+          "assets/work/saju/f11.jpg",
+          "assets/work/saju/f12.jpg"
+        ],
+        "aspect": "600/1000",
+        "per": 4.2
       }
     ]
   },
@@ -2594,22 +2725,29 @@ window.PROJECTS_EN = {
         ]
       },
       {
-        "type": "images",
+        "type": "carousel",
+        "title": "",
+        "body": "",
         "images": [
           "assets/work/hateful-dream/f03.jpg",
           "assets/work/hateful-dream/f04.jpg",
           "assets/work/hateful-dream/f05.jpg",
-          "assets/work/hateful-dream/f06.jpg"
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/hateful-dream/f06.jpg",
           "assets/work/hateful-dream/f07.jpg",
           "assets/work/hateful-dream/f08.jpg",
           "assets/work/hateful-dream/f09.jpg",
-          "assets/work/hateful-dream/f10.jpg"
-        ]
+          "assets/work/hateful-dream/f10.jpg",
+          "assets/work/hateful-dream/f11.jpg",
+          "assets/work/hateful-dream/f12.jpg",
+          "assets/work/hateful-dream/f13.jpg",
+          "assets/work/hateful-dream/f14.jpg",
+          "assets/work/hateful-dream/f15.jpg",
+          "assets/work/hateful-dream/f16.jpg",
+          "assets/work/hateful-dream/f17.jpg",
+          "assets/work/hateful-dream/f18.jpg"
+        ],
+        "aspect": "1280/556",
+        "per": 1.1
       }
     ]
   },

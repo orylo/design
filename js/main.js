@@ -43,10 +43,10 @@
     // 비공개 작업: 흑백·딤 썸네일 + 제목만, 링크 없음 (상세 내용은 공개 데이터에 없음)
     if (p.locked) {
       return (
-        '<div class="tile tile--locked' + (p.dim ? " tile--dim" : "") + '" aria-disabled="true">' +
+        '<div class="tile tile--locked" aria-disabled="true">' +
           '<span class="tile__media">' +
             '<img class="tile__thumb" src="' + esc(p.thumb) + '" alt="" loading="lazy" onerror="this.remove()">' +
-            (p.dim ? "" : '<span class="tile__lock">' + esc(T("locked_label")) + '</span>') +
+            '<span class="tile__lock">' + esc(T("locked_label")) + '</span>' +
           '</span>' +
           '<span class="tile__overlay">' +
             '<span class="tile__meta">' + esc(label) + ' | ' + esc(ym) + '</span>' +
@@ -175,6 +175,23 @@
         return '<img src="' + esc(u) + '" alt="" loading="lazy" onerror="this.remove()">';
       }).join("");
       return '<div class="container section"><div class="detail-tiles">' + t + "</div></div>";
+    }
+    // 좌우로 넘겨 보는 묶음 (인스타 에피소드·툰·책 펼침면 등). aspect: 한 장의 비율 "4/5" 등, per: 한 화면에 몇 장
+    if (s.type === "carousel") {
+      var slides = (s.images || []).map(function (u, i) {
+        return '<figure class="carousel__slide"><img src="' + esc(u) + '" alt="" loading="' + (i < 3 ? "eager" : "lazy") + '"></figure>';
+      }).join("");
+      var n = (s.images || []).length;
+      return '<div class="container section">' +
+        (s.title ? '<h2 class="headline" style="margin-bottom:8px">' + esc(s.title) + "</h2>" : "") +
+        (s.body ? '<p class="body" style="opacity:.75;margin-bottom:20px;max-width:42rem">' + esc(s.body) + "</p>" : "") +
+        '<div class="carousel" data-carousel style="--ar:' + esc(s.aspect || "1/1") + ';--per:' + (s.per || 1.15) + '">' +
+          '<div class="carousel__track" tabindex="0" aria-label="' + esc(s.title || "carousel") + '">' + slides + "</div>" +
+          '<div class="carousel__bar">' +
+            '<span class="caption carousel__count"><b data-cur>01</b> / ' + String(n).padStart(2, "0") + "</span>" +
+            '<span class="carousel__btns"><button class="btn btn-icon" data-prev aria-label="이전">&#8592;</button><button class="btn btn-icon" data-next aria-label="다음">&#8594;</button></span>' +
+          "</div>" +
+        "</div></div>";
     }
     if (s.type === "images") {
       var im = (s.images || []).map(function (u) {
@@ -398,6 +415,48 @@
     if (el) el.textContent = new Date().getFullYear();
   }
 
+  /* ---- Carousel: 버튼·키보드로 한 장씩, 번호 갱신 ---- */
+  function initCarousels() {
+    document.querySelectorAll("[data-carousel]").forEach(function (c) {
+      var track = c.querySelector(".carousel__track");
+      var slides = track.children;
+      var cur = c.querySelector("[data-cur]");
+      function step() { return slides[0] ? slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 0) : track.clientWidth; }
+      function index() { return Math.round(track.scrollLeft / step()); }
+      function go(d) { track.scrollBy({ left: d * step(), behavior: "smooth" }); }
+      c.querySelector("[data-prev]").addEventListener("click", function () { go(-1); });
+      c.querySelector("[data-next]").addEventListener("click", function () { go(1); });
+      track.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") { e.preventDefault(); go(1); } if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); } });
+      track.addEventListener("scroll", function () { cur.textContent = String(Math.min(slides.length, index() + 1)).padStart(2, "0"); }, { passive: true });
+    });
+  }
+
+  /* ---- Home: 첫 화면 영상의 밝기를 읽어 워드마크·SCROLL 색을 바꿈 ---- */
+  function initHeroTone() {
+    var v = document.querySelector(".hero-full video");
+    if (!v || !document.body.classList.contains("is-home")) return;
+    var cv = document.createElement("canvas"); cv.width = 48; cv.height = 27;
+    var ctx = cv.getContext("2d", { willReadFrequently: true });
+    function lum(x0, y0, w, h) {
+      var d = ctx.getImageData(x0, y0, w, h).data, t = 0;
+      for (var i = 0; i < d.length; i += 4) t += 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
+      return t / (d.length / 4);
+    }
+    function sample() {
+      if (v.readyState >= 2) {
+        try {
+          // 화면에 보이는 영역(object-fit: cover) 기준으로 그림
+          var sw = v.videoWidth, sh = v.videoHeight, vw = v.clientWidth, vh = v.clientHeight;
+          var sc = Math.max(vw / sw, vh / sh), cw = vw / sc, ch = vh / sc;
+          ctx.drawImage(v, (sw - cw) / 2, (sh - ch) / 2, cw, ch, 0, 0, 48, 27);
+          document.body.dataset.toneTop = lum(0, 0, 14, 4) < 120 ? "dark" : "light";
+          document.body.dataset.toneBottom = lum(18, 22, 12, 5) < 120 ? "dark" : "light";
+        } catch (e) {}
+      }
+    }
+    setInterval(sample, 250);
+  }
+
   /* ---- Home: switch overlay nav to solid after the hero ---- */
   function initStickyNav() {
     var top = document.querySelector("[data-sitetop]");
@@ -464,10 +523,12 @@
     renderFeatured();
     renderWork();
     renderDetail();
+    initCarousels();
     initNav();
     initForm();
     initYear();
     initStickyNav();
+    initHeroTone();
     injectLangToggle();
     localizeForm();
   });
