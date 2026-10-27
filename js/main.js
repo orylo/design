@@ -43,10 +43,10 @@
     // 비공개 작업: 흑백·딤 썸네일 + 제목만, 링크 없음 (상세 내용은 공개 데이터에 없음)
     if (p.locked) {
       return (
-        '<div class="tile tile--locked" aria-disabled="true">' +
+        '<div class="tile tile--locked' + (p.dim ? " tile--dim" : "") + '" aria-disabled="true">' +
           '<span class="tile__media">' +
             '<img class="tile__thumb" src="' + esc(p.thumb) + '" alt="" loading="lazy" onerror="this.remove()">' +
-            '<span class="tile__lock">' + esc(T("locked_label")) + '</span>' +
+            (p.dim ? "" : '<span class="tile__lock">' + esc(T("locked_label")) + '</span>') +
           '</span>' +
           '<span class="tile__overlay">' +
             '<span class="tile__meta">' + esc(label) + ' | ' + esc(ym) + '</span>' +

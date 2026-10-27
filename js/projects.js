@@ -58,7 +58,79 @@ const PROJECTS = [
       "반려동물 비문(코 지문) 인식이라는 낯선 기술의 진입 장벽을 낮추기 위해, ‘반려동물을 잃어버렸을 때’의 감정에서 출발한 BI와 시각 언어를 정립했습니다. 기술에 대한 거리감을 줄이고 신뢰감을 높이는 방향으로 브랜드를 설계했습니다.",
       "퍼포먼스 마케팅에서는 프롬프트를 ‘주제–배경–촬영–미술’ 4레이어로 구조화한 AI 시각화 시스템을 만들어 팀과 공유했고, 일관된 톤앤매너의 소재를 대량 생산했습니다. 그 결과 다운로드 CPA를 3,000원대에서 900원대로 낮추며 유입을 2배 이상 끌어올렸습니다."
     ],
-    "thumb": "assets/work/petnow-brand/thumb.jpg"
+    "thumb": "assets/work/petnow-brand/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "오렌지 클로버와 강아지 — 리브랜딩 키 비주얼",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f01.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "기술이 아니라, 잃어버렸을 때의 감정에서 출발하다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f02.jpg",
+          "assets/work/petnow-brand/f03.jpg",
+          "assets/work/petnow-brand/f04.jpg",
+          "assets/work/petnow-brand/f05.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "BI를 등록증·외장칩·인식표까지 잇다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f06.jpg",
+          "assets/work/petnow-brand/f07.jpg",
+          "assets/work/petnow-brand/f08.jpg",
+          "assets/work/petnow-brand/f09.jpg",
+          "assets/work/petnow-brand/f10.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "포스터 월에 펼친 펫나우 브랜드",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f11.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "프롬프트를 4레이어로 나눠, 팀이 같은 톤의 소재를 만들게 하다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f12.jpg",
+          "assets/work/petnow-brand/f13.jpg",
+          "assets/work/petnow-brand/f14.jpg",
+          "assets/work/petnow-brand/f15.jpg",
+          "assets/work/petnow-brand/f16.jpg",
+          "assets/work/petnow-brand/f17.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/petnow-brand/hero.jpg",
+    "previewVideo": "assets/work/petnow-brand/preview.mp4"
   },
   {
     "slug": "max-nose-id",
@@ -122,9 +194,26 @@ const PROJECTS = [
             "body": "기술이 만든 따뜻한 일상으로 브랜드 비전을 안정적으로 마무리."
           }
         ]
+      },
+      {
+        "type": "text",
+        "title": "Meet Max and His ID — 강아지의 시점으로 말을 걸다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/max-nose-id/f01.jpg",
+          "assets/work/max-nose-id/f02.jpg",
+          "assets/work/max-nose-id/f03.jpg",
+          "assets/work/max-nose-id/f04.jpg"
+        ]
       }
     ],
-    "thumb": "assets/work/max-nose-id/thumb.jpg"
+    "thumb": "assets/work/max-nose-id/thumb.jpg",
+    "gallery": [],
+    "hero": "assets/work/max-nose-id/hero.jpg",
+    "previewVideo": "assets/work/max-nose-id/preview.mp4"
   },
   {
     "slug": "is-sue-missing",
@@ -162,7 +251,38 @@ const PROJECTS = [
       "대부분의 실종 캠페인이 ‘사람이 반려동물을 찾는’ 구조라면, 이 영상은 반대로 강아지가 사라진 보호자를 찾아 나서는 꿈을 꾸는 구조로 시작합니다. 불안 → 행동 → 좌절 → 회상 → 안도의 감정 흐름을 강아지 POV로 설계했습니다.",
       "기능 설명 대신 감정이 납득된 뒤 ‘조용한 문장’으로 펫나우의 실종 방지 기능을 연결해, 브랜드의 목적을 감정으로 말하도록 구성했습니다."
     ],
-    "thumb": "assets/work/is-sue-missing/thumb.jpg"
+    "thumb": "assets/work/is-sue-missing/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "〈Is Sue Missing?〉 — 장면으로 보는 캠페인 영상",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/is-sue-missing/f01.jpg",
+          "assets/work/is-sue-missing/f02.jpg",
+          "assets/work/is-sue-missing/f03.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "장면",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/is-sue-missing/f04.jpg",
+          "assets/work/is-sue-missing/f05.jpg",
+          "assets/work/is-sue-missing/f06.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/is-sue-missing/hero.jpg",
+    "previewVideo": "assets/work/is-sue-missing/preview.mp4"
   },
   {
     "slug": "dinosaur-universe",
@@ -220,9 +340,38 @@ const PROJECTS = [
       {
         "type": "quote",
         "text": "사람은 기능이 아니라 ‘내가 뭘 했는지’를 기억한다 — 행동으로 남는 브랜드 경험을 지향했습니다."
+      },
+      {
+        "type": "text",
+        "title": "거울 조각 터널 런웨이부터 체험 키트까지",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold4/f01.jpg",
+          "assets/work/galaxy-studio-fold4/f02.jpg",
+          "assets/work/galaxy-studio-fold4/f03.jpg",
+          "assets/work/galaxy-studio-fold4/f04.jpg",
+          "assets/work/galaxy-studio-fold4/f05.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "설명서 대신 빙고판으로 배우는 Z 폴드4",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold4/f06.jpg"
+        ]
       }
     ],
-    "thumb": "assets/work/galaxy-studio-fold4/thumb.jpg"
+    "thumb": "assets/work/galaxy-studio-fold4/thumb.jpg",
+    "gallery": [],
+    "hero": "assets/work/galaxy-studio-fold4/hero.jpg",
+    "previewVideo": "assets/work/galaxy-studio-fold4/preview.mp4"
   },
   {
     "slug": "galaxy-studio-s22",
@@ -256,7 +405,26 @@ const PROJECTS = [
       "갤럭시 S22 시리즈를 직접 경험하는 공간으로, 전국 삼성 디지털프라자·대형 쇼핑몰·백화점 등 20여 곳 베뉴와 40여 개 대학 캠퍼스에서 운영했습니다.",
       "다채로운 색감과 디테일을 담는 ‘낮의 화장 공간’과, 흔들림 없이 밝게 찍히는 ‘밤의 정원 공간’에서 극대화된 카메라 성능을 체험하도록 설계했습니다. 프로젝트 최초로 전시 공간 자체를 광고로 삼은 TVCF를 도입했고, 대면 수업이 재개되는 시기에 맞춰 ‘갤럭시 스튜디오 in campus Part 2’로 캠퍼스까지 확장했습니다."
     ],
-    "thumb": "assets/work/galaxy-studio-s22/thumb.jpg"
+    "thumb": "assets/work/galaxy-studio-s22/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "체험에서 경험으로, 전시장에서 ‘내 일상’을 겪게 하다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-s22/f01.jpg",
+          "assets/work/galaxy-studio-s22/f02.jpg",
+          "assets/work/galaxy-studio-s22/f03.jpg",
+          "assets/work/galaxy-studio-s22/f04.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/galaxy-studio-s22/hero.jpg",
+    "previewVideo": "assets/work/galaxy-studio-s22/preview.mp4"
   },
   {
     "slug": "galaxy-studio-fold3",
@@ -290,7 +458,37 @@ const PROJECTS = [
       "삼성 폴더블폰 Z Fold3·Flip3를 오프라인에서 직접 체험하게 한 갤럭시 스튜디오의 첫 시즌입니다. 전국 삼성 디지털프라자를 비롯한 다수 베뉴에서 ‘기능 인지 → 행동 유도 → 결과 공유’로 이어지는, 시즌마다 반복 적용 가능한 콘텐츠 구조를 설계했습니다.",
       "MZ세대가 열광하는 레이블링 게임 ‘나만의 폴더블 캐릭터 테스트’로 3세대 갤럭시 Z의 혁신 기능을 체험하게 했고, 다양한 콜라보 브랜드와 함께한 ‘나만의 폴더블 라이프’ 참여 이벤트, 폴더블의 접힘을 활용해 마스크 속 숨겨졌던 웃음을 되찾아주는 ‘스마일 새로 활짝’ 이벤트까지 — 코로나 시기의 정서에 맞춘 참여형 경험을 기획했습니다."
     ],
-    "thumb": "assets/work/galaxy-studio-fold3/thumb.jpg"
+    "thumb": "assets/work/galaxy-studio-fold3/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "폴더블을 처음 만나는 사람에게, 성향부터 묻는 스튜디오",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f01.jpg",
+          "assets/work/galaxy-studio-fold3/f02.jpg",
+          "assets/work/galaxy-studio-fold3/f03.jpg",
+          "assets/work/galaxy-studio-fold3/f04.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "무인 체험 앱, 홈 화면에서 스튜디오 방문 유도까지",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f05.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/galaxy-studio-fold3/hero.jpg",
+    "previewVideo": "assets/work/galaxy-studio-fold3/preview.mp4"
   },
   {
     "slug": "toy-kingdom",
@@ -353,9 +551,81 @@ const PROJECTS = [
       {
         "type": "quote",
         "text": "“2021년의 장난감 가게라면, 2021년식의 교훈을 아이들에게 줘야 한다.” — 아이와 어른 모두에게 현대적인 교훈을 들려주는 공간을 지향했습니다."
+      },
+      {
+        "type": "text",
+        "title": "장난감 가게가 ‘지금 시대의 교훈’을 건네는 인형극",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f01.jpg",
+          "assets/work/toy-kingdom/f02.jpg",
+          "assets/work/toy-kingdom/f03.jpg",
+          "assets/work/toy-kingdom/f04.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "직접 만든 32편",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f05.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "한 편이 넘어가는 순서 — 무대, 장면, 출연 제품",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f06.jpg",
+          "assets/work/toy-kingdom/f07.jpg",
+          "assets/work/toy-kingdom/f08.jpg",
+          "assets/work/toy-kingdom/f09.jpg",
+          "assets/work/toy-kingdom/f10.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "개미와 배짱이부터 양치기 소년까지, 매주 두 편",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f11.jpg",
+          "assets/work/toy-kingdom/f12.jpg",
+          "assets/work/toy-kingdom/f13.jpg",
+          "assets/work/toy-kingdom/f14.jpg",
+          "assets/work/toy-kingdom/f15.jpg",
+          "assets/work/toy-kingdom/f16.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "문화 인스타그램 분야 대상, 그리고 콘텐츠 사례로",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f17.jpg",
+          "assets/work/toy-kingdom/f18.jpg",
+          "assets/work/toy-kingdom/f19.jpg",
+          "assets/work/toy-kingdom/f20.jpg"
+        ]
       }
     ],
-    "thumb": "assets/work/toy-kingdom/thumb.jpg"
+    "thumb": "assets/work/toy-kingdom/thumb.jpg",
+    "gallery": [],
+    "previewVideo": "assets/work/toy-kingdom/preview.mp4"
   },
   {
     "slug": "mukkuri-hangwa",
@@ -506,7 +776,8 @@ const PROJECTS = [
       }
     ],
     "gallery": [],
-    "thumb": "assets/work/camel-coffee/thumb.jpg"
+    "thumb": "assets/work/camel-coffee/thumb.jpg",
+    "previewVideo": "assets/work/camel-coffee/preview.mp4"
   },
   {
     "slug": "azar-tools",
@@ -548,7 +819,74 @@ const PROJECTS = [
       "비문 인식 기반 서비스의 핵심 화면을 As-is / To-be 비교를 통해 재설계했습니다. 어려운 AI 기반 서비스일수록 기술 자체보다 사용자가 느끼는 감정에 집중해야 한다는 원칙으로, 명확한 위계와 직관적인 흐름을 만들었습니다.",
       "디자인 시스템을 정비해 컴포넌트·컬러·타이포의 일관성을 확보하고, 신규 기능이 빠르게 확장될 수 있는 기반을 마련했습니다."
     ],
-    "thumb": "assets/work/petnow-app/thumb.jpg"
+    "thumb": "assets/work/petnow-app/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "등록할 이유가, 제품 밖에 있었다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f01.jpg",
+          "assets/work/petnow-app/f02.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "처음 해보는 보호자도 한 번에 찍는 비문 스캔",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f03.jpg",
+          "assets/work/petnow-app/f04.jpg",
+          "assets/work/petnow-app/f05.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "목격한 사람은 비문으로 바로 대조한다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f06.jpg",
+          "assets/work/petnow-app/f07.jpg",
+          "assets/work/petnow-app/f08.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "펫나우·Petify 공용 디자인 시스템",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f09.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "Petnow Design System v1.0 — 펫나우·Petify 공용",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f10.jpg",
+          "assets/work/petnow-app/f11.jpg",
+          "assets/work/petnow-app/f12.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/petnow-app/hero.jpg",
+    "previewVideo": "assets/work/petnow-app/preview.mp4"
   },
   {
     "slug": "petnow-service",
@@ -581,7 +919,51 @@ const PROJECTS = [
       "보호자가 앱에서 실종 신고를 하면 SNS 공유용(인스타·카톡·당근)과 인쇄용(A4·A3) 전단지를 즉시 자동 생성하는 서비스를 기획·디자인했습니다. 반려동물 사진이 가장 먼저 보이도록 배치하고, 핵심 정보는 굵은 타이포와 고대비 컬러로, 인쇄 시에도 색과 해상도가 유지되도록 최적화했습니다.",
       "주변에 빠르게 알릴 수 있는 편의성을 제공해 실종 동물의 조기 발견 확률을 높였습니다."
     ],
-    "thumb": "assets/work/petnow-service/thumb.jpg"
+    "thumb": "assets/work/petnow-service/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "사람들은 잃으면, 전단지부터 만듭니다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-service/f01.jpg",
+          "assets/work/petnow-service/f02.jpg",
+          "assets/work/petnow-service/f03.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "한 번의 신고가 전단지와 제보로 이어지는 흐름",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-service/f04.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "화면 정의서 — 섹션별 정책과 남길 이벤트",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-service/f05.jpg",
+          "assets/work/petnow-service/f06.jpg",
+          "assets/work/petnow-service/f07.jpg",
+          "assets/work/petnow-service/f08.jpg",
+          "assets/work/petnow-service/f09.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/petnow-service/hero.jpg",
+    "previewVideo": "assets/work/petnow-service/preview.mp4"
   },
   {
     "slug": "chaegeun",
@@ -766,7 +1148,8 @@ const PROJECTS = [
       }
     ],
     "gallery": [],
-    "thumb": "assets/work/home-purrtect/thumb.jpg"
+    "thumb": "assets/work/home-purrtect/thumb.jpg",
+    "previewVideo": "assets/work/home-purrtect/preview.mp4"
   },
   {
     "slug": "major-in-love",
@@ -807,16 +1190,9 @@ const PROJECTS = [
       },
       {
         "type": "text",
-        "title": "여섯 사람, 서로 다른 첫 만남",
+        "title": "게임 화면",
         "body": [
-          "여섯 명은 전공과 말투, 만나는 장소가 모두 다릅니다. 사람마다 첫 만남 컷을 따로 두고 얼굴 각도 시트로 같은 얼굴과 화풍을 지켰습니다."
-        ]
-      },
-      {
-        "type": "text",
-        "title": "전공을 고르고, 한 주를 계획하고, 결과로 돌려받는다",
-        "body": [
-          "입학식에서 고른 전공은 졸업까지 바뀌지 않습니다. 매주 캠퍼스 지도에서 수업·근무·만남을 배치하면, 한 주가 끝날 때 스탯 변화가 카드 한 장으로 돌아옵니다."
+          "스토브 스토어에 올린 스크린샷입니다. 입학부터 전공 선택, 캠퍼스 만남, 축제, 폰 속 앱, 자취방까지 대학 4년의 흐름을 담았습니다."
         ]
       },
       {
@@ -825,25 +1201,25 @@ const PROJECTS = [
           "assets/work/major-in-love/01.jpg",
           "assets/work/major-in-love/02.jpg",
           "assets/work/major-in-love/03.jpg",
-          "assets/work/major-in-love/04.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "축제·괴담·사진관, 육성을 흔드는 이벤트",
-        "body": [
-          "1학기 축제는 16명이 겨루는 토너먼트로, 다섯 종목 중 하나를 골라 스탯 보정을 받는 미니게임으로 치릅니다. 학기마다 하나씩 풀리는 7대 괴담, 사진관과 런웨이까지 모두 스탯과 소지금에 이어 두었습니다."
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
+          "assets/work/major-in-love/04.jpg",
           "assets/work/major-in-love/05.jpg",
           "assets/work/major-in-love/06.jpg",
           "assets/work/major-in-love/07.jpg",
           "assets/work/major-in-love/08.jpg",
           "assets/work/major-in-love/09.jpg",
-          "assets/work/major-in-love/10.jpg"
+          "assets/work/major-in-love/10.jpg",
+          "assets/work/major-in-love/11.jpg",
+          "assets/work/major-in-love/12.jpg",
+          "assets/work/major-in-love/13.jpg",
+          "assets/work/major-in-love/14.jpg",
+          "assets/work/major-in-love/15.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "여섯 사람, 서로 다른 첫 만남",
+        "body": [
+          "여섯 명은 전공과 말투, 만나는 장소가 모두 다릅니다. 사람마다 첫 만남 컷을 따로 두고 얼굴 각도 시트로 같은 얼굴과 화풍을 지켰습니다."
         ]
       },
       {
@@ -854,23 +1230,7 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/major-in-love/11.jpg"
-        ]
-      },
-      {
-        "type": "text",
-        "title": "폰 속 11개 앱과 옷장, 하나의 UI 규칙으로",
-        "body": [
-          "도감·할 일·스케줄·SNS까지 폰 속 앱 11개와 의상 66벌의 옷장을 같은 카드·버튼·색 토큰으로 만들었습니다. 대화 중에도 관계 게이지는 늘 같은 자리에서 읽힙니다."
-        ]
-      },
-      {
-        "type": "images",
-        "images": [
-          "assets/work/major-in-love/12.jpg",
-          "assets/work/major-in-love/13.jpg",
-          "assets/work/major-in-love/14.jpg",
-          "assets/work/major-in-love/15.jpg"
+          "assets/work/major-in-love/16.jpg"
         ]
       },
       {
@@ -883,8 +1243,8 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/major-in-love/16.jpg",
-          "assets/work/major-in-love/17.jpg"
+          "assets/work/major-in-love/17.jpg",
+          "assets/work/major-in-love/18.jpg"
         ]
       },
       {
@@ -897,7 +1257,7 @@ const PROJECTS = [
       {
         "type": "images",
         "images": [
-          "assets/work/major-in-love/18.jpg"
+          "assets/work/major-in-love/19.jpg"
         ]
       }
     ],
@@ -906,43 +1266,18 @@ const PROJECTS = [
       "url": "https://youtu.be/1eG9wNb_Se4",
       "label": "Watch PV"
     },
-    "thumb": "assets/work/major-in-love/thumb.jpg"
+    "thumb": "assets/work/major-in-love/thumb.jpg",
+    "previewVideo": "assets/work/major-in-love/preview.mp4"
   },
   {
     "slug": "idea",
-    "titleEn": "IDEÁ",
     "titleKo": "IDEÁ",
+    "titleEn": "IDEÁ",
     "category": "experiments",
-    "tags": [
-      "AI",
-      "Branding",
-      "Packaging"
-    ],
     "date": "2025-05",
-    "period": "2025.05",
     "color": "navy",
-    "featured": false,
-    "concept": "‘Narcissus’ — 자기 도취와 현실 왜곡을 테마로 한 4인조 가상 보이그룹.",
-    "role": [
-      "Art Direction",
-      "Album Package Design",
-      "Social Content"
-    ],
-    "tools": [
-      "Midjourney",
-      "Runway",
-      "Stable Diffusion",
-      "ChatGPT",
-      "Claude",
-      "Photoshop",
-      "Illustrator"
-    ],
-    "client": "Portfolio project",
-    "year": "2025",
-    "overview": [
-      "그리스·로마 신화에서 영감을 받은 첫 미니앨범 Narcissus는 일렉트로팝·신스팝·얼터너티브 R&B의 몽환적이고 실험적인 무드를 비주얼로 풀어낸 4인조 보이그룹 프로젝트입니다. 흐릿한 빛과 강한 그림자가 교차하는 미장센, 클래식하면서 비현실적인 요소가 어우러진 디자인이 특징입니다.",
-      "가상 앨범 패키지·굿즈·디지털 콘텐츠까지 IDEÁ의 독창적 아이덴티티를 다양한 형태로 확장했습니다."
-    ],
+    "locked": true,
+    "dim": true,
     "thumb": "assets/work/idea/thumb.jpg"
   },
   {
@@ -981,7 +1316,47 @@ const PROJECTS = [
       "생성형 AI로 제작한 인스타툰 시리즈로, 직장 생활의 현실을 마법소녀 세계관과 결합해 유머러스하게 풀어냈습니다. 주인공 ‘문대리’가 회사에서 겪는 현실적 상황을 마법소녀적 시각으로 표현해 직장인의 공감과 재미를 동시에 선사합니다.",
       "2026년 텀블벅 크라우드펀딩을 통해 보드게임 제작·출시를 계획하고 있습니다."
     ],
-    "thumb": "assets/work/salay-moon/thumb.jpg"
+    "thumb": "assets/work/salay-moon/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "샐러리맨과 세일러문, 직장 생활을 마법소녀로",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/salay-moon/f01.jpg",
+          "assets/work/salay-moon/f02.jpg",
+          "assets/work/salay-moon/f03.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "문대리의 하루 — 툰 23편",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/salay-moon/f04.jpg",
+          "assets/work/salay-moon/f05.jpg",
+          "assets/work/salay-moon/f06.jpg",
+          "assets/work/salay-moon/f07.jpg",
+          "assets/work/salay-moon/f08.jpg",
+          "assets/work/salay-moon/f09.jpg",
+          "assets/work/salay-moon/f10.jpg",
+          "assets/work/salay-moon/f11.jpg",
+          "assets/work/salay-moon/f12.jpg",
+          "assets/work/salay-moon/f13.jpg",
+          "assets/work/salay-moon/f14.jpg",
+          "assets/work/salay-moon/f15.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/salay-moon/hero.jpg",
+    "previewVideo": "assets/work/salay-moon/preview.mp4"
   },
   {
     "slug": "piper",
@@ -1019,35 +1394,85 @@ const PROJECTS = [
     ],
     "sections": [
       {
-        "type": "chapter",
-        "index": "01",
-        "title": "The Library of All — 모든 이야기가 모이는 도서관",
-        "body": "모든 사람의 이야기가 이 도서관에 있었지만, 그녀의 이야기를 담은 책만은 비어 있었다."
+        "type": "text",
+        "title": "01 — The Library of All — 모든 이야기가 모이는 도서관",
+        "body": [
+          "모든 사람의 이야기가 이 도서관에 있었지만, 그녀의 이야기를 담은 책만은 비어 있었다."
+        ]
       },
       {
-        "type": "chapter",
-        "index": "02",
-        "title": "The Red Path — 붉은 길",
-        "body": "“숲에서 이상한 소리를 들었어요.” 두려움에 떠는 이에게 PIPER가 이야기를 건넨다."
+        "type": "text",
+        "title": "02 — The Red Path — 붉은 길",
+        "body": [
+          "“숲에서 이상한 소리를 들었어요.” 두려움에 떠는 이에게 PIPER가 이야기를 건넨다."
+        ]
       },
       {
-        "type": "chapter",
-        "index": "03",
-        "title": "Dreams in the Dust — 먼지 속의 꿈",
-        "body": "“화려한 드레스가 꼭 필요하진 않지만, 조금 더 멋진 모습으로 갈 수 있도록 도와줄게.”"
+        "type": "text",
+        "title": "03 — Dreams in the Dust — 먼지 속의 꿈",
+        "body": [
+          "“화려한 드레스가 꼭 필요하진 않지만, 조금 더 멋진 모습으로 갈 수 있도록 도와줄게.”"
+        ]
       },
       {
-        "type": "chapter",
-        "index": "04",
-        "title": "The Melody of Departure — 떠나는 멜로디",
-        "body": "“이 노래의 제목은 ‘피리 부는 사람’일 수도 있지만, 나는 그 대신 ‘PIPER’라고 부를게.”"
+        "type": "text",
+        "title": "04 — The Melody of Departure — 떠나는 멜로디",
+        "body": [
+          "“이 노래의 제목은 ‘피리 부는 사람’일 수도 있지만, 나는 그 대신 ‘PIPER’라고 부를게.”"
+        ]
       },
       {
         "type": "quote",
         "text": "비주얼 스토리텔링 북(145×195, 72p) · CD-R · 폴디드 포스터(A3) · 랜덤 포토카드 — 이야기와 비주얼을 결합한 물성으로 물리적 경험을 제공."
+      },
+      {
+        "type": "text",
+        "title": "‘빈 책’이 채워지는 순간 — 피리 부는 사나이를 다시 썼습니다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/piper/f01.jpg",
+          "assets/work/piper/f02.jpg",
+          "assets/work/piper/f03.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "2–4장 — 붉은 길에서 밤거리 공연으로",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/piper/f04.jpg",
+          "assets/work/piper/f05.jpg",
+          "assets/work/piper/f06.jpg",
+          "assets/work/piper/f07.jpg",
+          "assets/work/piper/f08.jpg",
+          "assets/work/piper/f09.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "한 권의 책으로 열리는 앨범 패키지",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/piper/f10.jpg",
+          "assets/work/piper/f11.jpg",
+          "assets/work/piper/f12.jpg",
+          "assets/work/piper/f13.jpg"
+        ]
       }
     ],
-    "thumb": "assets/work/piper/thumb.jpg"
+    "thumb": "assets/work/piper/thumb.jpg",
+    "gallery": [],
+    "hero": "assets/work/piper/hero.jpg",
+    "previewVideo": "assets/work/piper/preview.mp4"
   },
   {
     "slug": "saju",
@@ -1095,9 +1520,24 @@ const PROJECTS = [
       {
         "type": "quote",
         "text": "운세를 ‘정보’가 아니라 ‘위로’로 — 같은 질문에도 사람마다 다른 색과 리듬으로 응답하도록 설계했습니다."
+      },
+      {
+        "type": "text",
+        "title": "산수 프레임 안의 대화 — 웹과 모바일",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/saju/f01.jpg",
+          "assets/work/saju/f02.jpg"
+        ]
       }
     ],
-    "thumb": "assets/work/saju/thumb.jpg"
+    "thumb": "assets/work/saju/thumb.jpg",
+    "gallery": [],
+    "hero": "assets/work/saju/hero.jpg",
+    "previewVideo": "assets/work/saju/preview.mp4"
   },
   {
     "slug": "hateful-dream",
@@ -1136,7 +1576,52 @@ const PROJECTS = [
       "“좋은 꿈도 나쁜 꿈도 아닌, 그저 싫은 꿈이었다”는 일기 구절에서 출발한 48시간 제작 단편입니다. AI의 할루시네이션과 불확실성을 감정의 재료로 활용해, 의도적으로 뜬금없는 프롬프트와 블렌딩으로 카오스 값을 높이고 예측 불가능한 결과를 받아들였습니다.",
       "실사 같은 초반부에서 초현실적 애니메이션 후반부로 이어지는 구조로 감정의 리듬을 설계했고, 전 세계 3,500팀 중 상위 30팀(파이널리스트)에 선정됐습니다."
     ],
-    "thumb": "assets/work/hateful-dream/thumb.jpg"
+    "thumb": "assets/work/hateful-dream/thumb.jpg",
+    "sections": [
+      {
+        "type": "text",
+        "title": "이야기가 없어도, 감정은 끝까지 갑니다",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/hateful-dream/f01.jpg",
+          "assets/work/hateful-dream/f02.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "처음 와봤지만 익숙한 숲에서, 꿈에 먹히기까지",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/hateful-dream/f03.jpg",
+          "assets/work/hateful-dream/f04.jpg",
+          "assets/work/hateful-dream/f05.jpg",
+          "assets/work/hateful-dream/f06.jpg"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "붉은 빛이 번지는 숲의 장면들",
+        "body": []
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/hateful-dream/f07.jpg",
+          "assets/work/hateful-dream/f08.jpg",
+          "assets/work/hateful-dream/f09.jpg",
+          "assets/work/hateful-dream/f10.jpg"
+        ]
+      }
+    ],
+    "gallery": [],
+    "hero": "assets/work/hateful-dream/hero.jpg",
+    "previewVideo": "assets/work/hateful-dream/preview.mp4"
   },
   {
     "slug": "digital-ghost",
@@ -1239,7 +1724,8 @@ const PROJECTS = [
       "url": "https://youtu.be/dfiMxNIIHjw",
       "label": "Watch film"
     },
-    "thumb": "assets/work/digital-ghost/thumb.jpg"
+    "thumb": "assets/work/digital-ghost/thumb.jpg",
+    "previewVideo": "assets/work/digital-ghost/preview.mp4"
   },
   {
     "slug": "joseon-hats",
@@ -1406,7 +1892,8 @@ const PROJECTS = [
     "overview": [
       "Oakland는 주자나 리코(Zuzana Licko)가 디자인한 서체로, 너비와 비례에 따라 6·8·10·15로 나뉩니다. 현재는 ‘Lo-res’라는 픽셀 폰트 패밀리에 통합되어 9 wide·12·15·22 BOLD 등으로 확장되었습니다.",
       "이 픽셀 서체의 구조와 비례를 해부하고 재구성해 타이포그래피 포스터로 풀어낸 작업입니다. Weltformat Korea 포스터전에 전시되었습니다."
-    ]
+    ],
+    "sections": []
   },
   {
     "slug": "heupyeonja",
@@ -1497,7 +1984,8 @@ const PROJECTS = [
           "김근영 · 유병현 · 윤철민 · 이민희 · 이성희 · 이지훈"
         ]
       }
-    ]
+    ],
+    "previewVideo": "assets/work/heupyeonja/preview.mp4"
   },
   {
     "slug": "palbok-type",
@@ -1569,7 +2057,8 @@ const PROJECTS = [
       }
     ],
     "gallery": [],
-    "thumb": "assets/work/palbok-type/thumb.jpg"
+    "thumb": "assets/work/palbok-type/thumb.jpg",
+    "previewVideo": "assets/work/palbok-type/preview.mp4"
   }
 ];
 
@@ -1584,6 +2073,50 @@ window.PROJECTS_EN = {
     "overview": [
       "To lower the barrier to an unfamiliar technology — nose-print recognition for pets — I built a brand identity and visual language rooted in the emotion of ‘losing your companion animal.’ The brand was designed to reduce the distance people feel toward the tech and to build trust.",
       "For performance marketing, I created an AI visualization system that structured prompts into four layers — subject, background, shot, art direction — and shared it with the team, mass-producing assets with a consistent tone. As a result, we cut the download CPA from the ~₩3,000 range to the ~₩900 range and more than doubled inflow."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f01.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f02.jpg",
+          "assets/work/petnow-brand/f03.jpg",
+          "assets/work/petnow-brand/f04.jpg",
+          "assets/work/petnow-brand/f05.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f06.jpg",
+          "assets/work/petnow-brand/f07.jpg",
+          "assets/work/petnow-brand/f08.jpg",
+          "assets/work/petnow-brand/f09.jpg",
+          "assets/work/petnow-brand/f10.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f11.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-brand/f12.jpg",
+          "assets/work/petnow-brand/f13.jpg",
+          "assets/work/petnow-brand/f14.jpg",
+          "assets/work/petnow-brand/f15.jpg",
+          "assets/work/petnow-brand/f16.jpg",
+          "assets/work/petnow-brand/f17.jpg"
+        ]
+      }
     ]
   },
   "max-nose-id": {
@@ -1618,6 +2151,15 @@ window.PROJECTS_EN = {
             "body": "Lands the brand vision on the warm everyday life the technology makes possible."
           }
         ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/max-nose-id/f01.jpg",
+          "assets/work/max-nose-id/f02.jpg",
+          "assets/work/max-nose-id/f03.jpg",
+          "assets/work/max-nose-id/f04.jpg"
+        ]
       }
     ]
   },
@@ -1626,6 +2168,24 @@ window.PROJECTS_EN = {
     "overview": [
       "Where most lost-pet campaigns are built around ‘a human searching for a pet,’ this film begins the other way around — a dog dreaming that it sets out to find its missing guardian. The emotional arc of anxiety → action → despair → memory → relief is designed entirely from the dog’s POV.",
       "Instead of explaining the feature, it lets the emotion land first, then connects Petnow’s lost-prevention function with a single ‘quiet sentence’ — letting the brand state its purpose through feeling."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/is-sue-missing/f01.jpg",
+          "assets/work/is-sue-missing/f02.jpg",
+          "assets/work/is-sue-missing/f03.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/is-sue-missing/f04.jpg",
+          "assets/work/is-sue-missing/f05.jpg",
+          "assets/work/is-sue-missing/f06.jpg"
+        ]
+      }
     ]
   },
   "galaxy-studio-fold4": {
@@ -1638,6 +2198,22 @@ window.PROJECTS_EN = {
       {
         "type": "quote",
         "text": "People remember not features, but ‘what they did’ — an experience that stays with you as action."
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold4/f01.jpg",
+          "assets/work/galaxy-studio-fold4/f02.jpg",
+          "assets/work/galaxy-studio-fold4/f03.jpg",
+          "assets/work/galaxy-studio-fold4/f04.jpg",
+          "assets/work/galaxy-studio-fold4/f05.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold4/f06.jpg"
+        ]
       }
     ]
   },
@@ -1646,6 +2222,17 @@ window.PROJECTS_EN = {
     "overview": [
       "A space to experience the Galaxy S22 series first-hand, operated across 20-plus venues — Samsung Digital Plazas, malls, department stores — and some 40 university campuses.",
       "I designed a ‘daytime makeup space’ that captures rich color and detail, and a ‘nighttime garden space’ that shoots bright and steady in the dark, so visitors could feel the camera at its peak. It was the first season to use the exhibition space itself as a TVCF, and we extended it to campuses as ‘Galaxy Studio in campus Part 2’ as in-person classes resumed."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-s22/f01.jpg",
+          "assets/work/galaxy-studio-s22/f02.jpg",
+          "assets/work/galaxy-studio-s22/f03.jpg",
+          "assets/work/galaxy-studio-s22/f04.jpg"
+        ]
+      }
     ]
   },
   "galaxy-studio-fold3": {
@@ -1653,6 +2240,23 @@ window.PROJECTS_EN = {
     "overview": [
       "The first season of Galaxy Studio, letting people experience the Z Fold3·Flip3 foldables offline. Across Samsung Digital Plazas and many other venues, I designed a content structure — awareness → action → sharing — that could be reapplied each season.",
       "A labeling game MZ audiences love, the ‘My Foldable Character Test,’ let people experience the third-gen Galaxy Z’s innovations; a ‘My Foldable Life’ event with various collab brands, and a ‘Smile, Wide Open’ event that used the fold to give back the smiles hidden behind masks — participatory experiences tuned to the emotional climate of the COVID era."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f01.jpg",
+          "assets/work/galaxy-studio-fold3/f02.jpg",
+          "assets/work/galaxy-studio-fold3/f03.jpg",
+          "assets/work/galaxy-studio-fold3/f04.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/galaxy-studio-fold3/f05.jpg"
+        ]
+      }
     ]
   },
   "toy-kingdom": {
@@ -1686,6 +2290,51 @@ window.PROJECTS_EN = {
       {
         "type": "quote",
         "text": "“A toy store in 2021 should hand kids a 2021 lesson.” — a space that tells modern morals to children and adults alike."
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f01.jpg",
+          "assets/work/toy-kingdom/f02.jpg",
+          "assets/work/toy-kingdom/f03.jpg",
+          "assets/work/toy-kingdom/f04.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f05.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f06.jpg",
+          "assets/work/toy-kingdom/f07.jpg",
+          "assets/work/toy-kingdom/f08.jpg",
+          "assets/work/toy-kingdom/f09.jpg",
+          "assets/work/toy-kingdom/f10.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f11.jpg",
+          "assets/work/toy-kingdom/f12.jpg",
+          "assets/work/toy-kingdom/f13.jpg",
+          "assets/work/toy-kingdom/f14.jpg",
+          "assets/work/toy-kingdom/f15.jpg",
+          "assets/work/toy-kingdom/f16.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/toy-kingdom/f17.jpg",
+          "assets/work/toy-kingdom/f18.jpg",
+          "assets/work/toy-kingdom/f19.jpg",
+          "assets/work/toy-kingdom/f20.jpg"
+        ]
       }
     ]
   },
@@ -1707,6 +2356,45 @@ window.PROJECTS_EN = {
     "overview": [
       "I redesigned the core screens of the nose-print recognition service through an As-is / To-be comparison. On the principle that the harder the AI service, the more you must focus on what the user feels rather than the technology itself, I built clear hierarchy and an intuitive flow.",
       "I overhauled the design system to secure consistency across components, color, and type, laying a foundation for new features to scale quickly."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f01.jpg",
+          "assets/work/petnow-app/f02.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f03.jpg",
+          "assets/work/petnow-app/f04.jpg",
+          "assets/work/petnow-app/f05.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f06.jpg",
+          "assets/work/petnow-app/f07.jpg",
+          "assets/work/petnow-app/f08.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f09.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-app/f10.jpg",
+          "assets/work/petnow-app/f11.jpg",
+          "assets/work/petnow-app/f12.jpg"
+        ]
+      }
     ]
   },
   "petnow-service": {
@@ -1714,6 +2402,32 @@ window.PROJECTS_EN = {
     "overview": [
       "I planned and designed a service that, the moment a guardian files a lost-pet report in the app, instantly generates flyers for social sharing (Instagram, KakaoTalk, Danggeun) and for print (A4, A3). The pet’s photo is placed first, key information is set in bold type and high-contrast color, and everything is optimized so color and resolution hold up in print.",
       "By making it effortless to spread the word quickly, it raises the odds of finding a lost animal early."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-service/f01.jpg",
+          "assets/work/petnow-service/f02.jpg",
+          "assets/work/petnow-service/f03.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-service/f04.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/petnow-service/f05.jpg",
+          "assets/work/petnow-service/f06.jpg",
+          "assets/work/petnow-service/f07.jpg",
+          "assets/work/petnow-service/f08.jpg",
+          "assets/work/petnow-service/f09.jpg"
+        ]
+      }
     ]
   },
   "chaegeun": {
@@ -1729,18 +2443,38 @@ window.PROJECTS_EN = {
       }
     ]
   },
-  "idea": {
-    "concept": "‘Narcissus’ — a four-member virtual boy group themed on self-obsession and distorted reality.",
-    "overview": [
-      "Narcissus, a debut mini-album inspired by Greco-Roman myth, is a four-member boy-group project that translates the dreamy, experimental mood of electropop, synth-pop, and alternative R&B into visuals. It is marked by a mise-en-scène where hazy light crosses hard shadow, and a design where classical and surreal elements meet.",
-      "From a virtual album package to goods and digital content, IDEÁ’s distinctive identity was extended across many forms."
-    ]
-  },
   "salay-moon": {
     "concept": "‘Salaryman + Sailor Moon’ — office-life reality reframed through a magical-girl universe, as an Insta-toon.",
     "overview": [
       "A generative-AI Insta-toon series that blends the reality of office life with a magical-girl universe for humor. The protagonist ‘Assistant Manager Moon’ faces all-too-real workplace situations through a magical-girl lens, offering office workers recognition and fun at once.",
       "A board-game version is planned for production and release via Tumblbug crowdfunding in 2026."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/salay-moon/f01.jpg",
+          "assets/work/salay-moon/f02.jpg",
+          "assets/work/salay-moon/f03.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/salay-moon/f04.jpg",
+          "assets/work/salay-moon/f05.jpg",
+          "assets/work/salay-moon/f06.jpg",
+          "assets/work/salay-moon/f07.jpg",
+          "assets/work/salay-moon/f08.jpg",
+          "assets/work/salay-moon/f09.jpg",
+          "assets/work/salay-moon/f10.jpg",
+          "assets/work/salay-moon/f11.jpg",
+          "assets/work/salay-moon/f12.jpg",
+          "assets/work/salay-moon/f13.jpg",
+          "assets/work/salay-moon/f14.jpg",
+          "assets/work/salay-moon/f15.jpg"
+        ]
+      }
     ]
   },
   "piper": {
@@ -1751,32 +2485,64 @@ window.PROJECTS_EN = {
     ],
     "sections": [
       {
-        "type": "chapter",
-        "index": "01",
-        "title": "The Library of All",
-        "body": "Everyone’s story was in this library, but the book holding hers alone was empty."
+        "type": "text",
+        "title": "01 — The Library of All",
+        "body": [
+          "Everyone’s story was in this library, but the book holding hers alone was empty."
+        ]
       },
       {
-        "type": "chapter",
-        "index": "02",
-        "title": "The Red Path",
-        "body": "“I heard a strange sound in the forest.” PIPER offers a story to one trembling with fear."
+        "type": "text",
+        "title": "02 — The Red Path",
+        "body": [
+          "“I heard a strange sound in the forest.” PIPER offers a story to one trembling with fear."
+        ]
       },
       {
-        "type": "chapter",
-        "index": "03",
-        "title": "Dreams in the Dust",
-        "body": "“You don’t need a fancy dress, but I’ll help you go looking a little finer.”"
+        "type": "text",
+        "title": "03 — Dreams in the Dust",
+        "body": [
+          "“You don’t need a fancy dress, but I’ll help you go looking a little finer.”"
+        ]
       },
       {
-        "type": "chapter",
-        "index": "04",
-        "title": "The Melody of Departure",
-        "body": "“This song could be called ‘the Pied Piper,’ but I’ll call it ‘PIPER’ instead.”"
+        "type": "text",
+        "title": "04 — The Melody of Departure",
+        "body": [
+          "“This song could be called ‘the Pied Piper,’ but I’ll call it ‘PIPER’ instead.”"
+        ]
       },
       {
         "type": "quote",
         "text": "A visual-storytelling book (145×195, 72pp) · CD-R · folded poster (A3) · random photocard — a physical experience binding story and visuals into objects."
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/piper/f01.jpg",
+          "assets/work/piper/f02.jpg",
+          "assets/work/piper/f03.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/piper/f04.jpg",
+          "assets/work/piper/f05.jpg",
+          "assets/work/piper/f06.jpg",
+          "assets/work/piper/f07.jpg",
+          "assets/work/piper/f08.jpg",
+          "assets/work/piper/f09.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/piper/f10.jpg",
+          "assets/work/piper/f11.jpg",
+          "assets/work/piper/f12.jpg",
+          "assets/work/piper/f13.jpg"
+        ]
       }
     ]
   },
@@ -1798,6 +2564,13 @@ window.PROJECTS_EN = {
       {
         "type": "quote",
         "text": "Fortune as comfort, not information — the same question answered in a different color and rhythm for each person."
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/saju/f01.jpg",
+          "assets/work/saju/f02.jpg"
+        ]
       }
     ]
   },
@@ -1806,6 +2579,33 @@ window.PROJECTS_EN = {
     "overview": [
       "A 48-hour short born from a diary line: ‘It wasn’t a good dream or a bad dream — just a hateful one.’ Using AI’s hallucination and uncertainty as emotional material, I deliberately raised the chaos value with off-kilter prompts and blends, embracing unpredictable results.",
       "Structured to move from a photoreal opening into a surreal animated finale to shape the rhythm of emotion, it was selected as a finalist — top 30 of 3,500 teams worldwide."
+    ],
+    "sections": [
+      {
+        "type": "images",
+        "images": [
+          "assets/work/hateful-dream/f01.jpg",
+          "assets/work/hateful-dream/f02.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/hateful-dream/f03.jpg",
+          "assets/work/hateful-dream/f04.jpg",
+          "assets/work/hateful-dream/f05.jpg",
+          "assets/work/hateful-dream/f06.jpg"
+        ]
+      },
+      {
+        "type": "images",
+        "images": [
+          "assets/work/hateful-dream/f07.jpg",
+          "assets/work/hateful-dream/f08.jpg",
+          "assets/work/hateful-dream/f09.jpg",
+          "assets/work/hateful-dream/f10.jpg"
+        ]
+      }
     ]
   },
   "joseon-hats": {
