@@ -514,3 +514,17 @@ video.tile__preview { transform: scale(1.08); transform-origin: center; }
 .detail-gallery .img-ph img { position: static; display: block; width: 100%; height: auto; }
 
 .detail-gallery:empty { display: none; }
+
+/* ---------- 비공개 작업 타일: 작업은 했지만 보여드릴 수 없는 것 ---------- */
+.tile--locked { cursor: default; }
+.tile--locked:hover { box-shadow: none; transform: none; }
+.tile--locked:hover .tile__overlay { display: block; }   /* 일반 타일과 달리 캡션 유지 */
+.tile--locked .tile__thumb { filter: grayscale(1) brightness(.62) contrast(.92); }
+.tile--locked .tile__overlay { background: #2a292a; }
+.tile--locked .tile__title, .tile--locked .tile__meta { color: rgba(255,255,255,.55); }
+.tile__lock {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;
+  padding: 8px 14px; border: 1px solid rgba(255,255,255,.7); border-radius: 999px;
+  font-family: var(--font-body, inherit); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: #fff; background: rgba(7,6,7,.35); white-space: nowrap;
+}

@@ -40,6 +40,21 @@
   function tileHTML(p) {
     var label = catLabel[p.category] || "Work";   // 3개 카테고리 중 하나로 통일
     var ym = String(p.date || "").replace("-", ".");   // 2024-12 → 2024.12
+    // 비공개 작업: 흑백·딤 썸네일 + 제목만, 링크 없음 (상세 내용은 공개 데이터에 없음)
+    if (p.locked) {
+      return (
+        '<div class="tile tile--locked" aria-disabled="true">' +
+          '<span class="tile__media">' +
+            '<img class="tile__thumb" src="' + esc(p.thumb) + '" alt="" loading="lazy" onerror="this.remove()">' +
+            '<span class="tile__lock">' + esc(T("locked_label")) + '</span>' +
+          '</span>' +
+          '<span class="tile__overlay">' +
+            '<span class="tile__meta">' + esc(label) + ' | ' + esc(ym) + '</span>' +
+            '<span class="tile__title">' + esc(ptitle(p)) + '</span>' +
+          '</span>' +
+        '</div>'
+      );
+    }
     var isVideo = hasTag(p, "Video") || hasTag(p, "Film");
     // 호버 프리뷰: previewVideo(mp4)가 있으면 영상, 없으면 gif
     var previewMedia = p.previewVideo
@@ -68,7 +83,7 @@
   function renderFeatured() {
     var host = document.querySelector("[data-featured-grid]");
     if (!host) return;
-    var items = sortedProjects().filter(function (p) { return p.featured; }).slice(0, 4);
+    var items = sortedProjects().filter(function (p) { return p.featured && !p.locked; }).slice(0, 4);
     host.innerHTML = items.map(tileHTML).join("");
   }
 
@@ -175,7 +190,7 @@
     if (!host) return;
 
     var slug = new URLSearchParams(location.search).get("slug");
-    var all = sortedProjects();
+    var all = sortedProjects().filter(function (p) { return !p.locked; });   // 비공개 작업은 상세·이전/다음에서 제외
     var idx = all.findIndex(function (p) { return p.slug === slug; });
     var p = all[idx];
 
