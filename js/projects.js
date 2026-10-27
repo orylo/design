@@ -28,7 +28,7 @@ const PROJECTS = [
   {
     "slug": "petnow-brand",
     "titleEn": "Petnow — Brand & Growth",
-    "titleKo": "펫나우 브랜드 & 그로스",
+    "titleKo": "Petnow — Brand & Growth",
     "category": "brand",
     "tags": [
       "Branding",
@@ -62,7 +62,7 @@ const PROJECTS = [
   },
   {
     "slug": "max-nose-id",
-    "titleEn": "Max’s Nose ID",
+    "titleEn": "맥스의 코 신분증 이야기",
     "titleKo": "맥스의 코 신분증 이야기",
     "category": "brand",
     "tags": [
@@ -176,7 +176,7 @@ const PROJECTS = [
   },
   {
     "slug": "legoland-flash-sale",
-    "titleKo": "레고랜드 설날 플래시 세일",
+    "titleKo": "LEGOLAND Flash Sale",
     "titleEn": "LEGOLAND Flash Sale",
     "category": "brand",
     "date": "2024-12",
@@ -187,7 +187,7 @@ const PROJECTS = [
   {
     "slug": "galaxy-studio-fold4",
     "titleEn": "Galaxy Studio — Z Fold4·Flip4",
-    "titleKo": "갤럭시 스튜디오 — Z Fold4·Flip4",
+    "titleKo": "Galaxy Studio — Z Fold4·Flip4",
     "category": "brand",
     "tags": [
       "Experience",
@@ -227,7 +227,7 @@ const PROJECTS = [
   {
     "slug": "galaxy-studio-s22",
     "titleEn": "Galaxy Studio — S22",
-    "titleKo": "갤럭시 스튜디오 — S22",
+    "titleKo": "Galaxy Studio — S22",
     "category": "brand",
     "tags": [
       "Experience",
@@ -261,7 +261,7 @@ const PROJECTS = [
   {
     "slug": "galaxy-studio-fold3",
     "titleEn": "Galaxy Studio — Z Fold3·Flip3",
-    "titleKo": "갤럭시 스튜디오 — Z Fold3·Flip3",
+    "titleKo": "Galaxy Studio — Z Fold3·Flip3",
     "category": "brand",
     "tags": [
       "Experience",
@@ -294,8 +294,8 @@ const PROJECTS = [
   },
   {
     "slug": "toy-kingdom",
-    "titleEn": "Toy Kingdom",
-    "titleKo": "토이킹덤 브랜디드 콘텐츠",
+    "titleEn": "토이킹덤",
+    "titleKo": "토이킹덤",
     "category": "brand",
     "tags": [
       "Branding",
@@ -359,7 +359,7 @@ const PROJECTS = [
   },
   {
     "slug": "mukkuri-hangwa",
-    "titleEn": "Mukkuri Hangwa",
+    "titleEn": "무꾸리 한과",
     "titleKo": "무꾸리 한과",
     "category": "brand",
     "tags": [
@@ -417,8 +417,8 @@ const PROJECTS = [
   },
   {
     "slug": "camel-coffee",
-    "titleEn": "CAMEL",
-    "titleKo": "카멜커피 리디자인 (개인 작업)",
+    "titleEn": "Camel Coffee Redesign",
+    "titleKo": "Camel Coffee Redesign",
     "category": "brand",
     "tags": [
       "Branding",
@@ -510,7 +510,7 @@ const PROJECTS = [
   },
   {
     "slug": "azar-tools",
-    "titleKo": "아자르 — 반복 작업을 도구로",
+    "titleKo": "Azar Creative Tools",
     "titleEn": "Azar Creative Tools",
     "category": "product",
     "date": "2026-01",
@@ -520,8 +520,8 @@ const PROJECTS = [
   },
   {
     "slug": "petnow-app",
-    "titleEn": "Petnow — App GUI Re-Design",
-    "titleKo": "펫나우 앱 GUI 리디자인",
+    "titleEn": "Petnow — App Redesign",
+    "titleKo": "Petnow — App Redesign",
     "category": "product",
     "tags": [
       "UI/UX",
@@ -552,8 +552,8 @@ const PROJECTS = [
   },
   {
     "slug": "petnow-service",
-    "titleEn": "Petnow — Lost Pet Flyer Service",
-    "titleKo": "펫나우 실종 전단지 자동생성 서비스",
+    "titleEn": "Petnow — Lost Pet Flyer",
+    "titleKo": "Petnow — Lost Pet Flyer",
     "category": "product",
     "tags": [
       "Service",
@@ -585,7 +585,7 @@ const PROJECTS = [
   },
   {
     "slug": "chaegeun",
-    "titleEn": "Chaegeun",
+    "titleEn": "채근채근",
     "titleKo": "채근채근",
     "category": "product",
     "tags": [
@@ -659,8 +659,8 @@ const PROJECTS = [
   },
   {
     "slug": "home-purrtect",
-    "titleEn": "PURRTECT",
-    "titleKo": "홈 퍼르텍트",
+    "titleEn": "Home Purrtect",
+    "titleKo": "Home Purrtect",
     "category": "product",
     "tags": [
       "Game",
@@ -770,7 +770,7 @@ const PROJECTS = [
   },
   {
     "slug": "major-in-love",
-    "titleEn": "MAJOR IN LOVE",
+    "titleEn": "전공은 연애",
     "titleKo": "전공은 연애",
     "category": "product",
     "tags": [
@@ -902,6 +902,10 @@ const PROJECTS = [
       }
     ],
     "gallery": [],
+    "link": {
+      "url": "https://youtu.be/1eG9wNb_Se4",
+      "label": "Watch PV"
+    },
     "thumb": "assets/work/major-in-love/thumb.jpg"
   },
   {
@@ -943,7 +947,7 @@ const PROJECTS = [
   },
   {
     "slug": "salay-moon",
-    "titleEn": "Salay Moon",
+    "titleEn": "샐러리문",
     "titleKo": "샐러리문",
     "category": "experiments",
     "tags": [
@@ -981,7 +985,7 @@ const PROJECTS = [
   },
   {
     "slug": "piper",
-    "titleEn": "PIPER",
+    "titleEn": "PIPER: The Melody of Departure",
     "titleKo": "PIPER: The Melody of Departure",
     "category": "experiments",
     "tags": [
@@ -1047,7 +1051,7 @@ const PROJECTS = [
   },
   {
     "slug": "saju",
-    "titleEn": "SAJU — AI Fortune Teller",
+    "titleEn": "SAJU",
     "titleKo": "SAJU",
     "category": "experiments",
     "tags": [
@@ -1097,7 +1101,7 @@ const PROJECTS = [
   },
   {
     "slug": "hateful-dream",
-    "titleEn": "Hateful Dream",
+    "titleEn": "싫은 꿈",
     "titleKo": "싫은 꿈",
     "category": "experiments",
     "tags": [
@@ -1136,7 +1140,7 @@ const PROJECTS = [
   },
   {
     "slug": "digital-ghost",
-    "titleEn": "GHOST",
+    "titleEn": "디지털 고스트",
     "titleKo": "디지털 고스트",
     "category": "experiments",
     "tags": [
@@ -1231,11 +1235,15 @@ const PROJECTS = [
       }
     ],
     "gallery": [],
+    "link": {
+      "url": "https://youtu.be/dfiMxNIIHjw",
+      "label": "Watch film"
+    },
     "thumb": "assets/work/digital-ghost/thumb.jpg"
   },
   {
     "slug": "joseon-hats",
-    "titleEn": "Joseon, The Nation of Hats",
+    "titleEn": "조선, 모자의 나라",
     "titleKo": "조선, 모자의 나라",
     "category": "experiments",
     "tags": [
@@ -1337,8 +1345,8 @@ const PROJECTS = [
   },
   {
     "slug": "oakland-typeface",
-    "titleEn": "Typeface Poster for OAKLAND",
-    "titleKo": "Oakland 타입페이스 포스터",
+    "titleEn": "Oakland",
+    "titleKo": "Oakland",
     "category": "experiments",
     "tags": [
       "Typography",
@@ -1403,7 +1411,7 @@ const PROJECTS = [
   {
     "slug": "heupyeonja",
     "titleEn": "吸緣者",
-    "titleKo": "吸緣者 (흡연자)",
+    "titleKo": "吸緣者",
     "category": "experiments",
     "tags": [
       "Editorial",
@@ -1493,7 +1501,7 @@ const PROJECTS = [
   },
   {
     "slug": "palbok-type",
-    "titleEn": "PALBOK",
+    "titleEn": "팔복체",
     "titleKo": "팔복체",
     "category": "experiments",
     "tags": [
