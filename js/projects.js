@@ -947,8 +947,8 @@ const PROJECTS = [
   },
   {
     "slug": "salay-moon",
-    "titleEn": "샐러리문",
-    "titleKo": "샐러리문",
+    "titleEn": "Salay Moon",
+    "titleKo": "Salay Moon",
     "category": "experiments",
     "tags": [
       "AI",
