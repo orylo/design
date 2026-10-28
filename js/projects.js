@@ -1795,7 +1795,6 @@ const PROJECTS = [
       "label": "Behance에서 보기"
     },
     "thumb": "assets/work/joseon-hats/thumb.jpg",
-    "preview": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/8291de94603903.5e8346de093dc.gif",
     "hero": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/818a3694603903.5e831badc8fa7.jpg",
     "gallery": [],
     "overview": [
@@ -1863,7 +1862,8 @@ const PROJECTS = [
     "credit": [
       "글·그림 : 이성희",
       "Sewing binding : 이지운"
-    ]
+    ],
+    "previewVideo": "assets/work/joseon-hats/preview.mp4"
   },
   {
     "slug": "oakland-typeface",
@@ -1891,13 +1891,11 @@ const PROJECTS = [
     ],
     "client": "Weltformat Korea 포스터전 (전시)",
     "year": "2019",
-    "previewContain": true,
     "link": {
       "url": "https://www.behance.net/gallery/94715627/Typeface-poster-for-OAKLAND",
       "label": "Behance에서 보기"
     },
     "thumb": "assets/work/oakland-typeface/thumb.jpg",
-    "preview": "https://mir-s3-cdn-cf.behance.net/project_modules/source/eeafc394715627.5e85b538d1072.gif",
     "hero": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/5889fb94715627.5e85b538ce483.jpg",
     "gallery": [
       "https://mir-s3-cdn-cf.behance.net/project_modules/source/eeafc394715627.5e85b538d1072.gif",
@@ -1929,7 +1927,8 @@ const PROJECTS = [
       "Oakland는 주자나 리코(Zuzana Licko)가 디자인한 서체로, 너비와 비례에 따라 6·8·10·15로 나뉩니다. 현재는 ‘Lo-res’라는 픽셀 폰트 패밀리에 통합되어 9 wide·12·15·22 BOLD 등으로 확장되었습니다.",
       "이 픽셀 서체의 구조와 비례를 해부하고 재구성해 타이포그래피 포스터로 풀어낸 작업입니다. Weltformat Korea 포스터전에 전시되었습니다."
     ],
-    "sections": []
+    "sections": [],
+    "previewVideo": "assets/work/oakland-typeface/preview.mp4"
   },
   {
     "slug": "heupyeonja",

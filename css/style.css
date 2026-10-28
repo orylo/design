@@ -292,16 +292,13 @@ body.is-home[data-tone-bottom="dark"] .hero-full__scroll { color: var(--color-pu
 .tile-grid--home { grid-template-columns: repeat(2, 1fr); }
 .tile-grid--work { grid-template-columns: repeat(3, 1fr); }
 .tile {
-  position: relative; display: flex; flex-direction: column; aspect-ratio: 1 / 1;
+  position: relative; display: flex; flex-direction: column;
   border-radius: var(--radius-card); overflow: hidden; background: var(--color-ash-white);
   transition: box-shadow .15s ease, transform .15s ease;
 }
 .tile:hover { box-shadow: 0 0 0 4px var(--color-acid-lime); transform: scale(1.03); }   /* hover 시 라임 스트로크 + 살짝 확대 */
-.tile:hover .tile__overlay { display: none; }   /* hover 시 검정 캡션 숨김 → 이미지가 정방형 꽉 채움 */
-/* 오클랜드만: 호버 프리뷰 좌우 안 잘리게(contain) + 상하 흰 여백 */
-.tile--contain .tile__preview { object-fit: contain; background: var(--color-pure-white); }
 .tile__media {
-  position: relative; flex: 1 1 auto; min-height: 0;   /* 검정 캡션 바 위쪽만 이미지 영역 */
+  position: relative; flex: none; aspect-ratio: 3 / 2;   /* 그림 칸은 어디서나 3:2 — 썸네일·호버 영상도 3:2라 잘리지 않음 */
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display); font-weight: 700; font-synthesis: none;
   font-size: 28px; letter-spacing: 0.02em; text-transform: uppercase;
@@ -312,7 +309,7 @@ body.is-home[data-tone-bottom="dark"] .hero-full__scroll { color: var(--color-pu
 .tile__media img { width: 100%; height: 100%; object-fit: cover; }
 .tile__badge { display: none; }   /* 영상 ▶ 배지 제거 */
 .tile__overlay {
-  position: relative; flex: 0 0 auto; padding: var(--space-lg);   /* 이미지 아래 별도의 검정 바 */
+  position: relative; flex: 1 1 auto; padding: var(--space-lg);   /* 이미지 아래 별도의 검정 바 (같은 줄 타일 높이 맞춤) */
   background: var(--ink); color: var(--color-pure-white);
 }
 .tile__title { display: block; font-family: var(--font-display); font-weight: 700; font-synthesis: none; font-size: 24px; line-height: 1.05; letter-spacing: 0.02em; text-transform: uppercase; color: #fff; }
@@ -504,12 +501,10 @@ body.is-home[data-tone-bottom="dark"] .hero-full__scroll { color: var(--color-pu
    이미지 자동 표시 (assets 규칙) — 파일 없으면 onerror로 사라져 플레이스홀더 유지
    ============================================================ */
 .hero-full__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-/* 썸네일: 정사각 타일을 꽉 채움 (cover) */
+/* 썸네일·호버 영상: 3:2 그림 칸을 채움 (파일도 3:2라 실제로 잘리는 곳 없음) */
 .tile__thumb, .tile__preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .tile__preview { opacity: 0; transition: opacity .2s ease; }
 .tile:hover .tile__preview { opacity: 1; }
-/* 호버 영상은 105% 확대 → 상하/좌우 살짝 크롭 */
-video.tile__preview { transform: scale(1.08); transform-origin: center; }
 /* 상세 히어로: 원본 비율 그대로 (자르지 않음) */
 .detail-hero { position: relative; }
 .detail-hero__img { position: static; display: block; width: 100%; height: auto; }
@@ -522,7 +517,6 @@ video.tile__preview { transform: scale(1.08); transform-origin: center; }
 /* ---------- 비공개 작업 타일: 작업은 했지만 보여드릴 수 없는 것 ---------- */
 .tile--locked { cursor: default; }
 .tile--locked:hover { box-shadow: none; transform: none; }
-.tile--locked:hover .tile__overlay { display: block; }   /* 일반 타일과 달리 캡션 유지 */
 .tile--locked .tile__thumb { filter: grayscale(1) brightness(.62) contrast(.92); }
 .tile--locked .tile__overlay { background: #2a292a; }
 .tile--locked .tile__title, .tile--locked .tile__meta { color: rgba(255,255,255,.55); }
